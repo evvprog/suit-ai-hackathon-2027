@@ -1,0 +1,1705 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Su&amp;IT AI Hackathon 2027 · Applied AI &amp; Robotics · Los Angeles</title>
+<meta name="description" content="Two-day applied AI &amp; robotics hackathon for students and recent grads. Jan 30–31, 2027, LA area. Free AI mentoring, real missions, prizes that launch you.">
+<!-- DRAFT: remove the next line on launch day, otherwise search engines will not index the page -->
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#2457FF">
+<!-- TODO(confirm): final public URL of this page (canonical, og:url, og:image) -->
+<link rel="canonical" href="https://suit.by/hackathon/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Su&amp;IT">
+<meta property="og:title" content="Su&amp;IT AI Hackathon 2027 — Applied AI &amp; Robotics in LA">
+<meta property="og:description" content="Two days. Five missions. Free AI mentoring. Jan 30–31, 2027 · Los Angeles area.">
+<meta property="og:url" content="https://suit.by/hackathon/">
+<meta property="og:image" content="https://suit.by/hackathon/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='3' y='3' width='58' height='58' rx='14' fill='%231638B0'/%3E%3Crect x='9' y='7' width='46' height='42' rx='10' fill='%232457FF'/%3E%3Cpath d='M22 38V18h6l4 10 4-10h6v20h-5V27l-4 9h-2l-4-9v11z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Unbounded:wght@800&amp;display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&amp;family=Unbounded:wght@800&amp;display=swap"></noscript>
+<style>
+/* Layout: a keyboard deck. Everything you can press is a keycap; information sits flat on the plate. */
+:root{
+  --paper:#F4F6FA; --plate:#E8ECF3; --card:#FFFFFF;
+  --ink:#10131C; --graphite:#3B4150; --slate:#5B6375; --line:#CDD4E0;
+  --blue:#2457FF; --blue-deep:#1638B0; --sky:#DDE8FF;
+  --cyan:#4FD8F3; --cyan-deep:#1C9BB8;
+  --signal:#FFD23F; --signal-deep:#C99A00;
+  --key:#FFFFFF; --key-side:#C3CAD6; --key-dark:#3B4150; --key-dark-side:#1E2129;
+  --font-display:"Unbounded","Arial Black","Segoe UI",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"Cascadia Mono","SFMono-Regular",Menlo,Consolas,monospace;
+  --font-body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --header-h:64px;
+}
+/* ---------- base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;color-scheme:light}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-body);font-size:1.0625rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+::selection{background:var(--blue);color:#fff}
+svg{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{margin:0;font-family:var(--font-display);font-weight:800;line-height:1.05;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(1.9rem,4.4vw,3.2rem)}
+h3{font-size:clamp(1.02rem,1.5vw,1.18rem);letter-spacing:-.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:12px;top:-80px;z-index:100;background:var(--ink);color:#fff;padding:10px 14px;border-radius:10px;font-weight:700;text-decoration:none}
+.skip-link:focus{top:12px}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+@media (min-width:720px){.wrap{width:min(1200px,100% - 64px)}}
+.i{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.i .fill{fill:currentColor;stroke:none}
+.section{padding-block:clamp(64px,9vw,116px);scroll-margin-top:calc(var(--header-h) + 4px)}
+.band{background:var(--plate);border-block:2px solid var(--line)}
+.anchor{display:block;height:0;scroll-margin-top:calc(var(--header-h) + 12px)}
+.section-head{max-width:780px;margin-bottom:clamp(28px,4vw,48px)}
+/* small section labels: a mini keycap marker instead of code-style slashes */
+.kicker,.panel-info h4,.footer-h,.success-extra h3{display:flex;align-items:center;gap:10px;font:600 .82rem/1.2 var(--font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--blue-deep)}
+.kicker::before,.panel-info h4::before,.footer-h::before,.success-extra h3::before{content:"";flex:none;width:12px;height:12px;border:2px solid currentColor;border-radius:4px;background:var(--signal);box-shadow:0 3px 0 currentColor}
+.kicker{margin-bottom:16px;font-size:.86rem}
+.lead{margin-top:14px;max-width:58ch;font-size:clamp(1.05rem,1.7vw,1.2rem);color:var(--slate)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border:2px solid var(--ink);border-radius:999px;background:var(--card);font:600 .82rem/1.2 var(--font-mono)}
+.tba{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:6px;background:var(--sky);color:var(--blue-deep);font:600 .7rem/1.3 var(--font-mono);vertical-align:middle}
+.fine{margin-top:10px;font-size:.9rem;color:var(--slate);max-width:72ch}
+
+/* ---------- keycaps: outline + darker skirt + light face that travels down when pressed ---------- */
+.key{--face:var(--key);--side:var(--key-side);--txt:var(--ink);display:inline-flex;vertical-align:middle;position:relative;margin:0;padding:2px 5px 11px;border:2.5px solid var(--ink);border-radius:18px 18px 15px 15px;background:var(--side);color:var(--txt);text-decoration:none;font:600 .98rem/1.15 var(--font-mono);text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+.key__face{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:44px;padding:9px 16px;border-radius:12px;background:var(--face);box-shadow:inset 0 2px 0 rgba(255,255,255,.55),inset 0 -2px 0 rgba(0,0,0,.07);transition:transform .14s cubic-bezier(.3,.7,.4,1.6),background-color .15s ease}
+.key .i{width:20px;height:20px;flex:none}
+@media (hover:hover){.key:hover .key__face{transform:translateY(-2px)}}
+.key:active .key__face,.key.is-down .key__face,.key[aria-pressed="true"] .key__face,.key[aria-selected="true"] .key__face{transform:translateY(5px);transition-duration:.06s}
+.key:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.key[disabled]{cursor:progress;opacity:.75}
+.key--yellow{--face:var(--signal);--side:var(--signal-deep)}
+.key--blue{--face:var(--blue);--side:var(--blue-deep);--txt:#fff}
+.key--cyan{--face:var(--cyan);--side:var(--cyan-deep)}
+.key--dark{--face:var(--key-dark);--side:var(--key-dark-side);--txt:#fff}
+.key--lg{font-size:1.06rem}.key--lg .key__face{min-height:54px;padding:12px 22px}
+.key--sm{font-size:.9rem;padding-bottom:9px;border-radius:15px 15px 13px 13px}.key--sm .key__face{min-height:34px;padding:6px 12px;border-radius:10px}
+.key--icon .key__face{padding:6px;min-width:44px}
+.kbd{display:inline-grid;place-items:center;min-width:1.6em;height:1.6em;border:2px solid currentColor;border-radius:6px;font-size:.8em}
+.link-btn{background:none;border:0;padding:0;text-decoration:underline;text-underline-offset:3px;font-weight:700;cursor:pointer}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(244,246,250,.95);border-bottom:2px solid transparent;transition:border-color .2s ease}
+.site-header.is-scrolled{border-bottom-color:var(--ink)}
+.header-inner{display:flex;align-items:center;gap:14px;min-height:var(--header-h)}
+.logo{display:inline-flex;align-items:center;gap:10px;text-decoration:none;white-space:nowrap}
+.logo-keys{display:flex;gap:3px}
+.logo-keys span{display:grid;place-items:center;width:24px;height:26px;border:2px solid var(--ink);border-radius:7px 7px 6px 6px;background:var(--key);box-shadow:0 3px 0 var(--ink);font:600 .78rem/1 var(--font-mono);transition:transform .12s ease,box-shadow .12s ease}
+.logo-keys span:nth-child(3){background:var(--signal)}
+.logo:hover .logo-keys span{transform:translateY(2px);box-shadow:0 1px 0 var(--ink)}
+.logo-keys span:nth-child(2){transition-delay:.03s}.logo-keys span:nth-child(3){transition-delay:.06s}.logo-keys span:nth-child(4){transition-delay:.09s}.logo-keys span:nth-child(5){transition-delay:.12s}
+.logo-text{font:800 .92rem/1 var(--font-display);letter-spacing:-.01em}
+.site-nav{margin-left:auto}
+.site-nav ul{display:flex;gap:2px}
+.site-nav a{display:block;padding:8px 10px;border-radius:10px;text-decoration:none;font:600 .84rem/1 var(--font-mono)}
+.site-nav a:hover{background:var(--plate)}
+.site-nav a[aria-current="true"]{background:var(--ink);color:#fff}
+.header-actions{display:flex;align-items:center;gap:10px}
+.menu-key{display:none}
+@media (max-width:1099px){.site-nav{display:none}.menu-key{display:inline-flex}.header-actions{margin-left:auto}}
+@media (max-width:499px){.logo-text{display:none}}
+@media (max-width:359px){.header-inner{gap:8px}.logo-keys span{width:18px}}
+
+/* ---------- menu (phone): a panel of keycaps ---------- */
+dialog{color:var(--ink)}
+.menu{width:min(560px,calc(100% - 24px));max-height:calc(100% - 24px);margin:auto;padding:20px;border:3px solid var(--ink);border-radius:28px;background:var(--card);box-shadow:0 12px 0 var(--ink)}
+.menu::backdrop{background:rgba(16,19,28,.45);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.menu-keys{display:flex;flex-wrap:wrap;gap:12px}
+.menu-keys .key__face{justify-content:space-between;gap:14px}
+.menu-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin-top:22px;padding-top:18px;border-top:2px solid var(--line)}
+.menu-foot .socials{gap:6px;margin-top:0}
+.menu-foot .key--icon .key__face{min-width:36px}
+@media (prefers-reduced-motion:no-preference){.menu[open] .menu-keys .key{animation:pop .32s cubic-bezier(.3,.7,.4,1.5) both;animation-delay:calc(var(--i,0) * 35ms)}}
+@keyframes pop{from{transform:translateY(14px) scale(.92)}to{transform:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding-block:clamp(24px,5vw,72px) clamp(40px,6vw,84px);scroll-margin-top:var(--header-h)}
+.hero::before{content:"";position:absolute;width:760px;height:760px;right:-240px;top:-280px;border-radius:50%;background:radial-gradient(circle,rgba(79,216,243,.38),rgba(79,216,243,0) 66%);pointer-events:none}
+.hero-grid{position:relative;display:grid;gap:clamp(36px,5vw,64px);align-items:center}
+@media (min-width:1000px){.hero-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)}}
+.tag{display:inline-block;padding:6px 10px;border:2px solid var(--ink);border-radius:10px;background:var(--sky);color:var(--blue-deep);font:600 .88rem/1.25 var(--font-mono)}
+.hero-title{margin-top:18px;font-size:clamp(3.1rem,10.5vw,6.6rem);line-height:.9;letter-spacing:-.045em}
+.hero-title .t1{display:block;color:var(--blue)}
+.hero-title .t2{display:block;margin-top:.32em;font-size:.45em;line-height:1.12;letter-spacing:-.02em}
+.year{display:inline-block;margin-left:.12em;padding:.02em .3em;border:3px solid var(--ink);border-radius:12px;background:var(--signal);box-shadow:0 5px 0 var(--ink);transform:rotate(-4deg)}
+.byline{margin-top:14px;max-width:44ch;color:var(--slate);font-size:.98rem;line-height:1.4}
+.byline strong{color:var(--ink)}
+.tagline{margin-top:14px;max-width:34ch;font-size:clamp(1.12rem,2vw,1.36rem);font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px}
+.facts li{display:inline-flex;align-items:center;gap:8px;font:600 .95rem/1.25 var(--font-mono)}
+.facts .i{width:20px;height:20px;color:var(--blue)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px 16px;margin-top:26px}
+/* phones: both hero keys fit in one row, so Apply stays on the first screen */
+@media (max-width:480px){.hero .cta-row{gap:10px;margin-top:20px}.hero .key--lg{font-size:.95rem}.hero .key--lg .key__face{min-height:46px;padding:9px 12px;gap:8px}.facts{gap:6px 18px;margin-top:16px}}
+.countdown{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:22px}
+.countdown-label{margin-right:4px;font:600 .82rem/1 var(--font-mono)}
+.cd{display:grid;place-items:center;min-width:58px;padding:7px 6px 6px;border:2.5px solid var(--ink);border-radius:12px;background:var(--key-dark);color:#fff}
+.cd b{font:600 1.3rem/1 var(--font-mono);font-variant-numeric:tabular-nums}
+.cd small{margin-top:4px;font:600 .6rem/1 var(--font-mono);letter-spacing:.08em}
+@media (max-width:480px){.countdown-label{flex-basis:100%}}
+/* the deck: a small keyboard that types the command */
+.deck{position:relative;width:100%;max-width:500px;margin-inline:auto;padding:18px;border:3px solid var(--ink);border-radius:30px;background:var(--graphite);box-shadow:0 12px 0 var(--ink);transform:rotate(-2deg)}
+.screen{min-height:4.6em;margin-bottom:16px;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;background:#0B0E15;color:#C6F5FF;font:600 clamp(.82rem,1.6vw,.98rem)/1.45 var(--font-mono);overflow-wrap:anywhere}
+.screen .prompt{color:var(--signal)}
+.screen .out{display:block;color:var(--cyan)}
+.caret{display:inline-block;width:.55em;height:1.05em;margin-left:2px;vertical-align:-.15em;background:#C6F5FF}
+.caps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cap{width:100%;aspect-ratio:1/1;padding:2px 4px 10px;cursor:pointer}
+.cap .key__face{height:100%;padding:0;font:800 clamp(1.4rem,4.2vw,2.3rem)/1 var(--font-display)}
+.cap--wide{grid-column:span 2;aspect-ratio:auto}
+.cap--wide .key__face{font:600 clamp(.82rem,1.6vw,1.02rem)/1 var(--font-mono)}
+.cap--space{grid-column:1/-1;aspect-ratio:auto}
+.cap--space .key__face{min-height:54px;font:600 clamp(.78rem,1.5vw,.95rem)/1.2 var(--font-mono);letter-spacing:.04em}
+@media (prefers-reduced-motion:no-preference){
+  .caret{animation:caret 1s steps(1) infinite}
+  .hero::before{animation:drift 14s ease-in-out infinite alternate}
+  .is-paused .caret,.hero.is-paused::before{animation-play-state:paused}
+}
+@keyframes caret{50%{opacity:0}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-90px,60px)}}
+
+/* ---------- ticker ---------- */
+.ticker{overflow:hidden;white-space:nowrap;background:var(--blue);color:#fff;border-block:3px solid var(--ink)}
+.ticker-track{display:inline-flex}
+.ticker-track span{display:inline-block;padding:14px 0;font:600 clamp(.9rem,1.6vw,1.05rem)/1 var(--font-mono);letter-spacing:.06em}
+@media (prefers-reduced-motion:no-preference){.ticker-track{animation:marquee 28s linear infinite}.ticker:hover .ticker-track,.ticker.is-paused .ticker-track{animation-play-state:paused}}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-block:clamp(28px,4vw,44px)}
+@media (min-width:860px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stat{padding:16px 18px;border:2.5px solid var(--ink);border-radius:18px;background:var(--card);box-shadow:0 6px 0 var(--ink)}
+.stat b{display:block;color:var(--blue);font:800 clamp(1.9rem,4.6vw,2.9rem)/1 var(--font-display);letter-spacing:-.03em}
+.stat span{display:block;margin-top:8px;font:600 .88rem/1.3 var(--font-mono)}
+
+/* ---------- missions: function keys you can pick ---------- */
+.missions{display:grid;gap:18px}
+@media (min-width:700px){.missions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1060px){.missions{grid-template-columns:repeat(6,minmax(0,1fr))}.missions li{grid-column:span 2}.missions li:nth-child(4),.missions li:nth-child(5){grid-column:span 3}}
+.mkey{display:flex;width:100%;height:100%;padding:3px 6px 14px;border-radius:24px 24px 20px 20px;font-family:var(--font-body)}
+.mkey .key__face{position:relative;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:8px;padding:16px 18px 18px;border-radius:17px;background:none;box-shadow:none}
+/* The coloured face is drawn behind the text so it always fills the card. Safari centres a button's
+   contents instead of stretching them, which would otherwise leave a strip of the skirt colour. */
+.mkey::before{content:"";position:absolute;inset:3px 6px 14px;border-radius:17px;background:var(--face);box-shadow:inset 0 2px 0 rgba(255,255,255,.55),inset 0 -2px 0 rgba(0,0,0,.07);transition:transform .14s cubic-bezier(.3,.7,.4,1.6),background-color .15s ease}
+@media (hover:hover){.mkey:hover::before{transform:translateY(-2px)}}
+.mkey:active::before,.mkey[aria-pressed="true"]::before{transform:translateY(5px);transition-duration:.06s}
+.mkey-top{display:flex;align-items:center;justify-content:space-between}
+.fn{font:600 .95rem/1 var(--font-mono);padding:4px 8px;border:2px solid currentColor;border-radius:8px}
+.mkey .i{width:30px;height:30px}
+.mkey-title{font:800 1.08rem/1.15 var(--font-display);letter-spacing:-.01em}
+.mkey-text{font-size:.97rem;font-weight:400;line-height:1.45}
+.mkey-eg{font:600 .8rem/1.4 var(--font-mono)}
+.mkey-cta{margin-top:auto;padding-top:10px;border-top:2px dashed currentColor;font:600 .82rem/1.2 var(--font-mono)}
+.mkey .when-on{display:none}
+.mkey[aria-pressed="true"] .when-on{display:inline}
+.mkey[aria-pressed="true"] .when-off{display:none}
+.mkey[aria-pressed="true"]{outline:3px solid var(--blue);outline-offset:4px}
+.missions-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px;margin-top:28px}
+.missions-foot p{max-width:56ch;font-weight:600}
+.live{min-height:1.4em;margin-top:12px;font:600 .9rem/1.4 var(--font-mono);color:var(--blue-deep)}
+
+/* ---------- flat tiles ---------- */
+.tiles{display:grid;gap:16px}
+@media (min-width:700px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1000px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tile{display:flex;gap:14px;align-items:flex-start;padding:18px;border:2.5px solid var(--ink);border-radius:18px;background:var(--card)}
+.tile h3{margin-bottom:6px}
+.tile p{color:var(--slate);font-size:.97rem}
+.ico{display:grid;place-items:center;flex:none;width:48px;height:48px;border:2.5px solid var(--ink);border-radius:14px;background:var(--sky);color:var(--blue-deep)}
+.ico .i{width:24px;height:24px}
+.ico--y{background:var(--signal);color:var(--ink)}.ico--c{background:var(--cyan);color:var(--ink)}.ico--d{background:var(--key-dark);color:#fff}
+.how{display:grid;gap:22px;margin-top:clamp(36px,5vw,56px)}
+@media (min-width:960px){.how{grid-template-columns:1.25fr 1fr}}
+.how h3{margin-bottom:14px}
+.steps{display:grid;gap:10px;counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:12px;align-items:center;padding:12px 14px;border:2px solid var(--ink);border-radius:14px;background:var(--card);font-weight:600}
+.steps li::before{content:counter(s);display:grid;place-items:center;flex:none;width:30px;height:30px;border:2px solid var(--ink);border-radius:8px;background:var(--signal);font:600 .9rem/1 var(--font-mono)}
+.judge{display:flex;flex-wrap:wrap;gap:8px}
+.judge li{padding:10px 14px;border:2px solid var(--ink);border-radius:12px;background:var(--card);font:600 .88rem/1.2 var(--font-mono)}
+.judge li b{color:var(--blue)}
+
+/* ---------- key dates + schedule ---------- */
+.timeline{display:grid;gap:12px}
+@media (min-width:980px){.timeline{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.milestone{position:relative;padding:16px;border:2.5px solid var(--ink);border-radius:16px;background:var(--card)}
+.milestone time,.milestone .when{display:block;color:var(--blue);font:600 .9rem/1.2 var(--font-mono)}
+.milestone b{display:block;margin-top:6px;font-weight:700;line-height:1.3}
+.milestone.is-main{background:var(--signal)}
+.milestone.is-main .when{color:var(--ink)}
+.days{display:grid;gap:18px;margin-top:clamp(36px,5vw,56px)}
+@media (min-width:860px){.days{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.day{padding:clamp(18px,2.4vw,26px);border:2.5px solid var(--ink);border-radius:20px;background:var(--card)}
+.day-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:10px;padding-bottom:12px;border-bottom:2.5px solid var(--ink)}
+.day-badge{padding:4px 10px;border-radius:8px;background:var(--blue);color:#fff;font:600 .8rem/1.2 var(--font-mono)}
+.day-hours{margin-left:auto;color:var(--slate);font:600 .85rem/1 var(--font-mono)}
+.slots li{display:grid;grid-template-columns:86px 1fr;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.slots li:last-child{border-bottom:0}
+.slots .t{font:600 .88rem/1.5 var(--font-mono);font-variant-numeric:tabular-nums}
+.slots .is-key .t{color:var(--blue)}
+.slots .is-key .w{font-weight:700}
+
+/* ---------- prizes ---------- */
+.podium{display:grid;gap:18px;align-items:end}
+@media (min-width:900px){.podium{grid-template-columns:1fr 1.15fr 1fr}.prize--1{order:2}.prize--2{order:1}.prize--3{order:3}}
+.prize{padding:clamp(20px,2.6vw,28px);border:2.5px solid var(--ink);border-radius:22px;background:var(--card);box-shadow:0 8px 0 var(--ink)}
+.prize--1{background:var(--signal);padding-block:clamp(28px,4vw,44px)}
+.prize--2{background:var(--cyan)}
+.place{display:inline-block;margin-bottom:14px;padding:4px 10px;border-radius:8px;background:var(--ink);color:#fff;font:600 .8rem/1.2 var(--font-mono)}
+.prize h3{margin-bottom:8px;font-size:clamp(1.15rem,1.8vw,1.4rem)}
+.prize p{color:var(--ink)}
+.finalists{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:26px;font-weight:700}
+
+/* ---------- partners ---------- */
+.partner-grid{display:grid;gap:22px}
+@media (min-width:900px){.partner-grid{grid-template-columns:1fr 1fr;align-items:start}}
+.logo-wall{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.slot{display:grid;place-items:center;align-content:center;gap:2px;min-height:92px;padding:12px;border:2.5px dashed var(--graphite);border-radius:16px;background:rgba(255,255,255,.7);color:var(--slate);text-align:center;font:600 .85rem/1.3 var(--font-mono)}
+.slot.lg{grid-column:1/-1;min-height:116px;background:var(--card)}
+.why{padding:clamp(20px,2.6vw,28px);border:2.5px solid var(--ink);border-radius:20px;background:var(--card)}
+.why h3{margin-bottom:14px}
+.ticks{display:grid;gap:10px}
+.ticks li{position:relative;padding-left:32px}
+.ticks li::before{content:"";position:absolute;left:0;top:.15em;width:22px;height:22px;border:2px solid var(--ink);border-radius:7px;background:var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat}
+.why .cta-row{margin-top:22px;align-items:center}
+.email-text{font:600 .95rem/1.3 var(--font-mono);-webkit-user-select:all;user-select:all}
+
+/* ---------- about ---------- */
+.about-grid{display:grid;gap:24px;align-items:center;grid-template-columns:minmax(0,1fr)}
+.about-grid > *{min-width:0}
+@media (min-width:900px){.about-grid{grid-template-columns:auto minmax(0,1fr)}}
+.about-copy p{max-width:62ch}
+.about-copy p + p{margin-top:12px;color:var(--slate)}
+
+/* ---------- faq: each question is a key that stays down while open ---------- */
+.faq{display:grid;gap:12px;max-width:880px}
+.faq-key{display:block;width:100%;cursor:default;font-family:var(--font-body);-webkit-user-select:text;user-select:text}
+.faq-key > details.key__face{display:block;padding:0;text-align:left}
+.faq-key summary{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:15px 18px;list-style:none;cursor:pointer;font-weight:700;font-size:1.03rem}
+.faq-key summary::-webkit-details-marker{display:none}
+.faq-key summary::after{content:"+";display:grid;place-items:center;flex:none;width:30px;height:30px;border:2px solid var(--ink);border-radius:8px;background:var(--signal);font:600 1rem/1 var(--font-mono)}
+.faq-key details[open] summary::after{content:"\2212"}
+.faq-key details[open],.faq-key:hover details[open]{transform:translateY(5px)}
+.faq-key .ans{padding:0 18px 16px;color:var(--graphite);font-weight:400;line-height:1.55}
+@supports selector(::details-content){@media (prefers-reduced-motion:no-preference){
+  .faq-key details::details-content{block-size:0;overflow-y:clip;transition:block-size .25s ease,content-visibility .25s allow-discrete}
+  .faq-key details[open]::details-content{block-size:auto}
+  :root{interpolate-size:allow-keywords}
+}}
+
+/* ---------- apply ---------- */
+.apply{background:var(--blue);color:#fff}
+.apply .kicker{color:#fff}
+.apply .lead{color:#fff}
+.apply :focus-visible{outline-color:var(--signal)}
+.form-card{padding:0;overflow:hidden;border:3px solid var(--ink);border-radius:26px;background:var(--card);color:var(--ink);box-shadow:0 12px 0 var(--ink)}
+.form-card :focus-visible{outline-color:var(--blue)}
+.form-tabs{display:flex;flex-wrap:wrap;gap:12px;padding:16px;border-bottom:2.5px solid var(--ink);background:var(--plate)}
+.form-tabs .key{flex:1 1 220px}
+.form-tabs .key[aria-selected="true"]{--face:var(--ink);--txt:#fff;--side:#000}
+.panel{display:grid;gap:28px;padding:clamp(20px,3.5vw,40px)}
+.panel[hidden]{display:none}
+@media (min-width:960px){.panel{grid-template-columns:.78fr 1.22fr;gap:48px}}
+.panel-info h3{margin-bottom:14px;font-size:1.4rem}
+.panel-info h4{margin:22px 0 12px}
+.form{display:grid;align-content:start;gap:16px}
+.two{display:grid;gap:16px}
+@media (min-width:620px){.two{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:6px;min-width:0;margin:0;padding:0;border:0}
+.field label,.field legend{padding:0;font-weight:700;font-size:.95rem}
+.req{color:#C8102E;font-weight:700}
+.opt{color:var(--slate);font-weight:600;font-size:.88rem}
+.req-note{font:600 .82rem/1.3 var(--font-mono);color:var(--slate)}
+input,select,textarea{width:100%;min-height:50px;padding:11px 14px;border:2.5px solid var(--ink);border-radius:12px;background:#fff;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--blue);outline-offset:1px}
+input:user-invalid,select:user-invalid,textarea:user-invalid{border-color:#C8102E;background:#FFF4F5}
+.picks{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.pick input{position:absolute;width:1px;height:1px;min-height:0;margin:0;padding:0;opacity:0}
+.pick .key__face{min-height:36px;padding:6px 12px;font-size:.88rem}
+.pick input:checked + .key__face{transform:translateY(5px);background:var(--cyan)}
+.pick input:checked + .key__face::before{content:"\2713";font-weight:800}
+.pick input:focus-visible + .key__face{outline:3px solid var(--blue);outline-offset:3px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
+.consent input{flex:none;width:22px;height:22px;min-height:0;margin-top:2px;padding:0;accent-color:var(--blue)}
+.group-error{margin-top:6px;color:#C8102E;font-weight:700;font-size:.92rem}
+.has-error .pick .key__face{background:#FFE3E7}
+.form-status{min-height:1.5em;color:#C8102E;font-weight:700}
+.hp{display:none!important}
+.form .key{justify-self:start}
+
+/* ---------- footer ---------- */
+.site-footer{padding-block:52px 28px;background:var(--paper);border-top:3px solid var(--ink)}
+.footer-grid{display:grid;gap:30px}
+@media (min-width:880px){.footer-grid{grid-template-columns:1.3fr 1fr .8fr}}
+.footer-grid p{margin-top:10px;color:var(--slate)}
+.footer-h{margin-bottom:14px}
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.footer-links{display:grid;gap:10px;font-weight:700}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:36px;padding-top:18px;border-top:2px dashed var(--line);color:var(--slate);font-size:.92rem}
+
+/* ---------- cookie notice ---------- */
+.cookie{position:fixed;left:12px;right:12px;bottom:12px;z-index:80;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 18px;max-width:640px;margin-inline:auto;padding:14px 16px;border:3px solid var(--ink);border-radius:20px;background:var(--card);box-shadow:0 8px 0 var(--ink);font-size:.93rem}
+@media (min-width:900px){.cookie{margin-inline:0 auto}}
+.cookie p{flex:1 1 260px}
+.cookie-keys{display:flex;gap:10px}
+
+/* ---------- dialogs ---------- */
+.dialog{width:min(640px,calc(100% - 24px));max-height:calc(100% - 24px);margin:auto;padding:0;border:3px solid var(--ink);border-radius:24px;background:var(--card);box-shadow:0 10px 0 var(--ink)}
+.dialog::backdrop{background:rgba(16,19,28,.5)}
+dialog:not([open]){display:none}
+dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} /* also covers browsers without showModal() */
+.dialog-body{position:relative;max-height:82vh;overflow:auto;padding:28px}
+.dialog-body h2{margin-bottom:12px;padding-right:56px;font-size:1.5rem}
+.dialog-body p,.dialog-body li{margin-top:10px;color:var(--graphite)}
+.dialog-body ul{padding-left:22px;list-style:disc}
+.dialog-x{position:absolute;top:14px;right:14px}
+.ok{display:inline-block;margin-bottom:12px;padding:4px 10px;border-radius:8px;background:#0B0E15;color:var(--cyan);font:600 .85rem/1.3 var(--font-mono)}
+.success-extra h3{margin:22px 0 12px}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.share-status{min-height:1.4em;margin-top:8px;font:600 .85rem/1.3 var(--font-mono);color:var(--blue-deep)}
+.share-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.share-row .share-url{flex:1 1 200px;width:auto;min-width:0;min-height:44px;padding:8px 12px;font:600 .85rem/1.2 var(--font-mono);-webkit-user-select:all;user-select:all}
+.dialog-done{margin-top:22px}
+
+/* ---------- motion: elements rest visible; below-the-fold blocks drop into place once ---------- */
+@media (prefers-reduced-motion:no-preference){
+  .drop-ready{transform:translateY(26px)}
+  .drop-ready.dropped{transform:none;transition:transform .7s cubic-bezier(.2,.8,.25,1.15);transition-delay:calc(var(--i,0) * 70ms)}
+}
+
+/* ---------- characters: inline SVG and CSS, animated with transforms only ---------- */
+[data-anim].is-paused,[data-anim].is-paused *{animation-play-state:paused!important}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes sway{from{transform:rotate(-3deg)}to{transform:rotate(3deg)}}
+@keyframes swing{from{transform:rotate(7deg)}to{transform:rotate(-7deg)}}
+@keyframes twinkle2{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.55);opacity:.5}}
+@keyframes popin{from{transform:scale(.7);opacity:0}to{transform:none;opacity:1}}
+.blinkc,.bit-eye,.cm-eyes i{transform-box:fill-box;transform-origin:center;animation:blink 4.6s infinite}
+
+/* Bit: the robot standing on the hero keyboard (and again above the footer) */
+.hero-copy{position:relative;z-index:1}
+.deck-stage{--bit-w:clamp(104px,15vw,128px);position:relative;z-index:1;width:100%;max-width:500px;margin:calc(var(--bit-w) * 1.2 + 8px) auto 0}
+.bit{position:absolute;right:7%;bottom:calc(100% - 4px);width:var(--bit-w);z-index:2;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.bit svg{display:block;width:100%;height:auto;overflow:visible}
+.bit-bob{transform-origin:80px 178px;animation:bob 2.4s ease-in-out infinite alternate}
+.bit,.cm,.crew{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.cm{-webkit-tap-highlight-color:transparent}
+.scene text{paint-order:stroke}
+.bit-light{transform-box:fill-box;transform-origin:center;animation:twinkle2 1.8s ease-in-out infinite}
+.bit-look{transform:translate(var(--lx,0px),var(--ly,0px));transition:transform .12s ease-out}
+.bit-arm-r{transform-origin:0 0;animation:wave 5s ease-in-out infinite}
+.bit-arm-l{transform-origin:0 0;animation:swing 3s ease-in-out infinite alternate}
+@keyframes wave{0%,52%,100%{transform:rotate(0)}8%{transform:rotate(-18deg)}16%{transform:rotate(12deg)}24%{transform:rotate(-18deg)}32%{transform:rotate(12deg)}40%{transform:rotate(-8deg)}}
+.bit.is-poked .bit-bob{animation:poke .5s cubic-bezier(.3,.7,.4,1.4)}
+@keyframes poke{0%{transform:translateY(0) scale(1)}35%{transform:translateY(-18px) scale(.95,1.06)}70%{transform:translateY(0) scale(1.05,.94)}100%{transform:translateY(0) scale(1)}}
+.bit-say{position:absolute;right:calc(7% + var(--bit-w) - 10px);bottom:calc(100% + var(--bit-w) * .55);z-index:3;max-width:190px;padding:8px 12px;border:2.5px solid var(--ink);border-radius:14px 14px 4px 14px;background:#fff;box-shadow:0 4px 0 var(--ink);font:600 .8rem/1.25 var(--font-mono);pointer-events:none}
+.bit-say.say-pop{animation:popin .35s cubic-bezier(.3,.7,.4,1.5)}
+.footer-bit{position:absolute;right:max(16px,calc(50% - 584px));top:-126px;width:112px;z-index:2}
+.footer-bit .bit{position:relative;right:auto;bottom:auto;width:100%}
+.footer-bit .bit-say{right:calc(100% - 6px);bottom:auto;top:8px;max-width:none;white-space:nowrap}
+.site-footer{position:relative}
+.apply{padding-bottom:clamp(150px,16vw,190px)}
+
+/* floating glyph keys in the hero background (wide screens only, so phones stay clean) */
+.floaties{position:absolute;inset:0;z-index:0;display:none;pointer-events:none}
+@media (min-width:1000px){.floaties{display:block}}
+.fl{position:absolute;display:grid;place-items:center;width:44px;height:48px;border:2.5px solid var(--ink);border-radius:13px;background:var(--key);box-shadow:0 5px 0 var(--ink);font:600 .82rem/1 var(--font-mono);animation:float 7s ease-in-out infinite alternate;animation-delay:var(--d,0s)}
+.fl--y{background:var(--signal)}.fl--c{background:var(--cyan)}.fl--b{background:var(--blue);color:#fff}
+@keyframes float{from{transform:translateY(0) rotate(var(--r,-6deg))}to{transform:translateY(-16px) rotate(calc(var(--r,-6deg) * -1))}}
+
+/* keycap characters: the S U & I T crew in About us, and the "?" in the FAQ */
+.crew{display:flex;align-items:flex-end;gap:clamp(8px,1.4vw,14px);padding-bottom:18px}
+.cm{--f:var(--key);--s:var(--key-side);--tc:var(--ink);--eye:var(--ink);position:relative;flex:0 1 auto;min-width:0;width:clamp(54px,8vw,86px);padding:2px 4px 10px;border:3px solid var(--ink);border-radius:18px 18px 15px 15px;background:var(--s);color:var(--tc);cursor:pointer;transform-origin:50% 100%;animation:hop 4.2s cubic-bezier(.3,.7,.4,1) infinite;animation-delay:var(--d,0s)}
+.cm::before,.cm::after{content:"";position:absolute;bottom:-17px;width:12px;height:14px;border-radius:0 0 7px 7px;background:var(--ink)}
+.cm::before{left:24%}.cm::after{right:24%}
+.cm-face{display:grid;justify-items:center;align-content:center;gap:clamp(4px,.8vw,8px);aspect-ratio:1/1.05;border-radius:13px;background:var(--f);box-shadow:inset 0 2px 0 rgba(255,255,255,.55),inset 0 -2px 0 rgba(0,0,0,.07)}
+.cm-eyes{display:flex;gap:clamp(8px,1.4vw,14px)}
+.cm-eyes i{width:clamp(7px,1vw,10px);height:clamp(9px,1.4vw,13px);border-radius:50%;background:var(--eye);animation-delay:calc(var(--d,0s) + 1s)}
+.cm-face b{font:800 clamp(1.3rem,3vw,2.1rem)/1 var(--font-display)}
+@keyframes hop{0%,62%,100%{transform:translateY(0) scale(1,1)}68%{transform:translateY(0) scale(1.06,.92)}78%{transform:translateY(-22px) scale(.96,1.06)}90%{transform:translateY(0) scale(1.05,.94)}95%{transform:translateY(-3px)}}
+.cm.cm-poke{animation:poke .5s cubic-bezier(.3,.7,.4,1.4)}
+.has-buddy{position:relative}
+.has-buddy .section-head{padding-right:clamp(104px,15vw,170px)}
+.buddy{position:absolute;right:0;top:-6px;width:clamp(84px,12vw,132px);pointer-events:none}
+.buddy svg{display:block;width:100%;height:auto;overflow:visible}
+.buddy--q{width:clamp(92px,12vw,140px);right:clamp(0px,1vw,16px);top:-14px;pointer-events:auto;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+.owl-bob{transform-origin:60px 126px;animation:owl 4s ease-in-out infinite}
+@keyframes owl{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-5px)}}
+.buddy--q.is-poked .owl-bob{animation:poke .5s cubic-bezier(.3,.7,.4,1.4)}
+.owl-wing-r{transform-origin:96px 72px;animation:flap 6s ease-in-out infinite}
+@keyframes flap{0%,62%,100%{transform:rotate(0)}70%{transform:rotate(-22deg)}78%{transform:rotate(8deg)}86%{transform:rotate(-18deg)}94%{transform:rotate(4deg)}}
+.owl-look{animation:glance 7s ease-in-out infinite}
+@keyframes glance{0%,100%{transform:translate(0,0)}25%{transform:translate(-3px,1px)}60%{transform:translate(3px,-1px)}}
+.owl-q{animation:sayq 5s steps(1) infinite}
+.owl-x{animation:sayx 5s steps(1) infinite}
+@keyframes sayq{0%{opacity:1}50%{opacity:0}}
+@keyframes sayx{0%{opacity:0}50%{opacity:1}}
+.troph{transform-box:fill-box;transform-origin:50% 100%;animation:trophy 3.2s ease-in-out infinite}
+@keyframes trophy{0%,100%{transform:translateY(0) scale(1,1)}40%{transform:translateY(-12px) scale(.97,1.04)}55%{transform:translateY(0) scale(1.05,.94)}70%{transform:translateY(-3px) scale(1)}}
+.tw{transform-box:fill-box;transform-origin:center;animation:twinkle2 1.6s ease-in-out infinite;animation-delay:var(--d,0s)}
+
+/* LA scene between the missions and the perks: sunny hills, palms, a rover and a delivery drone */
+.scene{position:relative;height:clamp(210px,25vw,420px);overflow:hidden;background:linear-gradient(180deg,#CFE0FF 0%,#F4F6FA 78%);border-block:3px solid var(--ink)}
+.scene svg{position:absolute;inset:0;width:100%;height:100%}
+.sun-rays{transform-origin:0 0;animation:spin 40s linear infinite}
+.cloud{animation:drift2 16s ease-in-out infinite alternate}
+.cloud.c2{animation-duration:22s;animation-delay:-6s}
+@keyframes drift2{from{transform:translateX(-24px)}to{transform:translateX(40px)}}
+.palm-top{transform-origin:0 0;animation:sway 4.4s ease-in-out infinite alternate}
+.road-dash{animation:dash 1.1s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-48}}
+.rover-move{animation:drive 20s linear infinite}
+@keyframes drive{from{transform:translateX(-170px)}to{transform:translateX(1380px)}}
+.rover-bob{animation:bump .36s ease-in-out infinite alternate}
+@keyframes bump{from{transform:translateY(0)}to{transform:translateY(-2px)}}
+.wheel{transform-box:fill-box;transform-origin:center;animation:spin .9s linear infinite}
+.plane-move{animation:fly2 26s linear infinite}
+@keyframes fly2{from{transform:translateX(1280px)}to{transform:translateX(-360px)}}
+.plane-bob{animation:hover 1.8s ease-in-out infinite alternate}
+.banner{transform-origin:0 0;animation:flutter .55s ease-in-out infinite alternate}
+@keyframes flutter{from{transform:rotate(-2deg) scaleY(1)}to{transform:rotate(2.5deg) scaleY(.92)}}
+@keyframes hover{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+.prop{transform-box:fill-box;transform-origin:center;animation:buzzy .1s linear infinite alternate}
+@keyframes buzzy{from{transform:scaleY(1)}to{transform:scaleY(.3)}}
+
+/* countdown digits slide in when they change */
+.cd b.flip{animation:rolln .35s cubic-bezier(.3,.7,.4,1.4)}
+@keyframes rolln{0%{transform:translateY(40%);opacity:0}100%{transform:none;opacity:1}}
+
+/* confetti (also inside the success pop-up, which lives in the top layer) */
+.confetti{position:fixed;inset:0;z-index:5;overflow:hidden;pointer-events:none}
+.confetti i{position:absolute;top:-20px;border-radius:2px;animation:confall linear forwards}
+@keyframes confall{to{transform:translate(var(--dx),110vh) rotate(var(--r))}}
+
+/* ---------- draft review mode (?draft) ---------- */
+.show-todos [data-todo]{outline:3px dashed #FF7A00;outline-offset:3px}
+.todo-panel{position:fixed;right:12px;bottom:12px;z-index:90;max-width:min(420px,calc(100% - 24px));padding:12px 14px;border-radius:16px;background:var(--ink);color:#fff;font-size:.9rem;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+/* phones: the cookie notice owns the bottom edge, so the checklist sits under the header */
+@media (max-width:1099px){.todo-panel{top:calc(var(--header-h) + 8px);bottom:auto;left:12px}.draft-on .hero{padding-top:72px}}
+.todo-panel summary{cursor:pointer;font-weight:800}
+.todo-panel ol{max-height:50vh;margin-top:8px;padding-left:20px;overflow:auto;list-style:decimal}
+.todo-panel li{margin-top:6px}
+.todo-panel .todo-note{margin-top:6px;color:var(--signal)}
+.todo-panel button{padding:0;border:0;background:none;color:var(--signal);text-align:left;text-decoration:underline;cursor:pointer;vertical-align:top}
+
+@media print{
+  .drop-ready{transform:none!important}
+  .site-header{position:static}
+  .cookie,.ticker,.todo-panel,.floaties,.scene,.footer-bit,.bit,.bit-say,.buddy,.crew{display:none!important}
+  .about-grid{grid-template-columns:minmax(0,1fr)}
+  .apply,.apply .kicker,.apply .lead{background:none;color:var(--ink)}
+}
+@media (forced-colors:active){.key[aria-pressed="true"],.key[aria-selected="true"],.pick input:checked + .key__face{outline:3px solid Highlight;outline-offset:2px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+<!-- Structured data for search engines. TODO(confirm): venue, price, URL before launch. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Su&IT AI Hackathon 2027",
+  "description": "A two-day applied AI and robotics hackathon for university students and recent graduates in the Los Angeles area.",
+  "startDate": "2027-01-30T09:00:00-08:00",
+  "endDate": "2027-01-31T18:00:00-08:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": {
+    "@type": "Place",
+    "name": "Venue to be announced, Los Angeles area",
+    "address": {"@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US"}
+  },
+  "organizer": {"@type": "Organization", "name": "Su&IT", "url": "https://suit.by/"},
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://suit.by/hackathon/#apply"},
+  "image": "https://suit.by/hackathon/og-image.png"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+
+<!-- Standalone header: the association's main-site header is intentionally NOT used on this page -->
+<header class="site-header" data-header>
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="Su&amp;IT AI Hackathon, back to top">
+      <span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span>
+      <span class="logo-text">AI Hackathon</span>
+    </a>
+    <nav class="site-nav" aria-label="Page sections">
+      <ul>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#missions">Missions</a></li>
+        <li><a href="#perks">Perks</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#prizes">Prizes</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="key key--yellow key--sm" href="#apply-hacker" data-form="hacker"><span class="key__face">Apply <span aria-hidden="true">↵</span></span></a>
+      <button class="key key--icon key--sm menu-key" type="button" aria-haspopup="dialog" aria-controls="menu" data-menu-open>
+        <span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span class="sr-only">Open menu</span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Phone menu: a panel of keycaps -->
+<dialog class="menu" id="menu" aria-label="Menu">
+  <div class="menu-keys">
+    <a class="key key--sm" style="--i:0" href="#top" data-close aria-label="Top of the page"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 10v10h12V10"/></svg></span></a>
+    <a class="key key--dark key--sm" style="--i:1" href="#about" data-close><span class="key__face">About us <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></span></a>
+    <a class="key key--cyan key--sm" style="--i:2" href="#missions" data-close><span class="key__face">Missions <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle class="fill" cx="12" cy="12" r="1.6"/></svg></span></a>
+    <a class="key key--sm" style="--i:3" href="#perks" data-close><span class="key__face">Perks <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span></a>
+    <a class="key key--blue key--sm" style="--i:4" href="#dates" data-close><span class="key__face">Dates <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span></a>
+    <a class="key key--yellow key--sm" style="--i:5" href="#prizes" data-close><span class="key__face">Prizes <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a3 3 0 0 0 3 3M16 6h3v1a3 3 0 0 1-3 3M12 13v4M9 20h6M10 17h4"/></svg></span></a>
+    <a class="key key--sm" style="--i:6" href="#partners" data-close><span class="key__face">Partners <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span></a>
+    <a class="key key--sm" style="--i:7" href="#faq" data-close><span class="key__face">FAQ <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7v.5"/><circle class="fill" cx="12" cy="17" r="1.1"/></svg></span></a>
+    <a class="key key--yellow key--sm" style="--i:8" href="#apply-hacker" data-form="hacker" data-close><span class="key__face">Apply now <span aria-hidden="true">↵</span></span></a>
+    <a class="key key--sm" style="--i:9" href="#apply-contact" data-form="contact" data-close><span class="key__face">Contact us <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a>
+    <button class="key key--sm" style="--i:10" type="button" data-close aria-label="Close menu"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button>
+  </div>
+  <div class="menu-foot">
+    <span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span>
+    <ul class="socials" aria-label="Su&amp;IT on social media">
+      <li><a class="key key--sm key--icon" href="mailto:info@suit.by" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="#" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="#" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="#" data-social aria-label="WhatsApp"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.8-1.3-2.3-2.3l1-1-1-2z"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="#" data-social aria-label="LinkedIn"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg></span></a></li>
+    </ul>
+  </div>
+</dialog>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-labelledby="hero-title" data-hero>
+  <div class="floaties" aria-hidden="true" data-anim>
+    <span class="fl fl--c" style="right:2%;top:3%;--d:0s;--r:-8deg">{ }</span>
+    <span class="fl" style="right:31%;top:5%;--d:-2s;--r:6deg">&lt;/&gt;</span>
+    <span class="fl fl--y" style="right:3%;bottom:11%;--d:-4s;--r:7deg">AI</span>
+    <span class="fl fl--b" style="left:49%;bottom:7%;--d:-1s;--r:-6deg">01</span>
+    <span class="fl" style="right:27%;bottom:1%;--d:-3s;--r:5deg">;</span>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p><span class="tag">Applied AI &amp; Robotics hackathon</span></p>
+      <h1 class="hero-title" id="hero-title"><span class="t1">Su&amp;IT</span><span class="t2">AI Hackathon <span class="year">2027</span></span></h1>
+      <p class="byline">by <strong>Su&amp;IT</strong>, an international startup competition and business forum</p>
+      <p class="tagline">Two days to build AI and robots that actually work. Then pitch them to founders and investors.</p>
+      <ul class="facts" aria-label="Key facts">
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Jan 30–31, 2027</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Los Angeles area</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>Students &amp; recent grads</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v4H4z"/><path d="M6 13v7h12v-7M12 9v11"/><path d="M12 9C10 9 8 8 8 6.5S10 4 12 9zM12 9c2 0 4-1 4-2.5S14 4 12 9z"/></svg>Free for accepted hackers</li>
+      </ul>
+      <div class="cta-row">
+        <a class="key key--yellow key--lg" href="#apply-hacker" data-form="hacker"><span class="key__face">Apply now <span class="kbd" aria-hidden="true">↵</span></span></a>
+        <a class="key key--lg" href="#apply-contact" data-form="contact"><span class="key__face">Contact us <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a>
+      </div>
+      <div class="countdown" data-countdown data-anim>
+        <span class="countdown-label">Kickoff in</span>
+        <span class="cd"><b data-cd="d">--</b><small>DAYS</small></span>
+        <span class="cd"><b data-cd="h">--</b><small>HRS</small></span>
+        <span class="cd"><b data-cd="m">--</b><small>MIN</small></span>
+        <span class="cd"><b data-cd="s">--</b><small>SEC</small></span>
+      </div>
+    </div>
+    <div class="deck-stage" data-anim data-stage>
+    <div class="bit-say" aria-hidden="true" data-say>Hi, hackers!</div>
+    <!-- Bit the robot (original character): eyes follow the pointer, waves, talks, reacts to a click -->
+    <div class="bit" aria-hidden="true" data-bit>
+      <svg viewBox="0 0 160 200" focusable="false">
+        <ellipse cx="80" cy="184" rx="36" ry="5" fill="#10131C" opacity=".18"/>
+        <g class="bit-bob">
+          <path d="M80 34V14" fill="none" stroke="#10131C" stroke-width="5" stroke-linecap="round"/>
+          <circle class="bit-light" cx="80" cy="10" r="8" fill="#FFD23F" stroke="#10131C" stroke-width="4"/>
+          <g transform="translate(48 122)"><g class="bit-arm-l"><path d="M0 0L-16 26" fill="none" stroke="#10131C" stroke-width="17" stroke-linecap="round"/><path d="M0 0L-16 26" fill="none" stroke="#4FD8F3" stroke-width="9" stroke-linecap="round"/></g></g>
+          <g transform="translate(112 122)"><g class="bit-arm-r"><path d="M0 0L24 -12L34 -40" fill="none" stroke="#10131C" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/><path d="M0 0L24 -12L34 -40" fill="none" stroke="#4FD8F3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="-44" r="10" fill="#FFD23F" stroke="#10131C" stroke-width="4"/></g></g>
+          <rect x="48" y="104" width="64" height="62" rx="18" fill="#2457FF" stroke="#10131C" stroke-width="4"/>
+          <rect x="64" y="120" width="32" height="28" rx="8" fill="#FFD23F" stroke="#10131C" stroke-width="3.5"/>
+          <path d="M88 128v8H74m5-5l-5 5 5 5" fill="none" stroke="#10131C" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="54" y="164" width="22" height="14" rx="7" fill="#10131C"/><rect x="84" y="164" width="22" height="14" rx="7" fill="#10131C"/>
+          <rect x="22" y="62" width="12" height="28" rx="6" fill="#4FD8F3" stroke="#10131C" stroke-width="3.5"/>
+          <rect x="126" y="62" width="12" height="28" rx="6" fill="#4FD8F3" stroke="#10131C" stroke-width="3.5"/>
+          <rect x="30" y="34" width="100" height="76" rx="26" fill="#fff" stroke="#10131C" stroke-width="4"/>
+          <rect x="42" y="46" width="76" height="52" rx="17" fill="#0B0E15"/>
+          <g class="bit-look">
+            <ellipse class="bit-eye" cx="64" cy="66" rx="7" ry="9" fill="#4FD8F3"/>
+            <ellipse class="bit-eye" cx="96" cy="66" rx="7" ry="9" fill="#4FD8F3"/>
+            <path d="M68 82Q80 92 92 82" fill="none" stroke="#4FD8F3" stroke-width="4" stroke-linecap="round"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="deck" aria-hidden="true" data-deck title="Type H, A, C, K on your keyboard">
+      <div class="screen"><span class="prompt">$</span> <span data-type>hack ai --la --jan-30-31</span><span class="caret"></span><span class="out" data-out>&gt; ready. press enter to apply</span></div>
+      <div class="caps">
+        <span class="key cap" data-k="h"><span class="key__face">H</span></span>
+        <span class="key cap" data-k="a"><span class="key__face">A</span></span>
+        <span class="key cap" data-k="c"><span class="key__face">C</span></span>
+        <span class="key cap" data-k="k"><span class="key__face">K</span></span>
+        <span class="key key--cyan cap" data-k="a2"><span class="key__face">A</span></span>
+        <span class="key key--cyan cap" data-k="i"><span class="key__face">I</span></span>
+        <span class="key key--yellow cap cap--wide" data-k="enter"><span class="key__face">ENTER ↵</span></span>
+        <span class="key key--blue cap cap--space" data-k="space"><span class="key__face">JAN 30–31 · LOS ANGELES</span></span>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true" data-ticker>
+  <div class="ticker-track">
+    <span>APPLY NOW ✦ JAN 30–31, 2027 ✦ LOS ANGELES AREA ✦ APPLIED AI &amp; ROBOTICS ✦ FREE 1:1 AI MENTORING ✦ 5 MISSIONS ✦&nbsp;</span>
+    <span>APPLY NOW ✦ JAN 30–31, 2027 ✦ LOS ANGELES AREA ✦ APPLIED AI &amp; ROBOTICS ✦ FREE 1:1 AI MENTORING ✦ 5 MISSIONS ✦&nbsp;</span>
+  </div>
+</div>
+
+<div class="wrap stats" role="group" aria-label="The hackathon in numbers">
+  <div class="stat" data-drop style="--i:0"><b>2</b><span>days of building, Sat–Sun</span></div>
+  <div class="stat" data-drop style="--i:1"><b>5</b><span>missions to pick from</span></div>
+  <div class="stat" data-drop style="--i:2"><b>1:1</b><span>AI mentoring, free</span></div>
+  <div class="stat" data-drop style="--i:3"><b>$0</b><span>to take part</span></div>
+</div>
+
+<!-- ================= ABOUT US ================= -->
+<section class="section band" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <!-- the S U & I T crew: keycap characters that hop in a wave and blink; a tap makes one jump -->
+    <ul class="crew" aria-hidden="true" data-anim>
+      <li class="cm" style="--d:0s"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>S</b></span></li>
+      <li class="cm" style="--d:.12s"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>U</b></span></li>
+      <li class="cm" style="--d:.24s;--f:var(--signal);--s:var(--signal-deep)"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>&amp;</b></span></li>
+      <li class="cm" style="--d:.36s;--f:var(--cyan);--s:var(--cyan-deep)"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>I</b></span></li>
+      <li class="cm" style="--d:.48s;--f:var(--blue);--s:var(--blue-deep);--tc:#fff;--eye:#fff"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>T</b></span></li>
+    </ul>
+    <div class="about-copy">
+      <span class="kicker">About us</span>
+      <h2 id="about-title">Who we are</h2>
+      <p class="lead">Su&amp;IT runs an international startup competition and business forum. We connect founders with investors, companies and experts.</p>
+      <p>Now we're bringing that network to LA's student builders, with free mentoring and a real path to launch.</p>
+      <ul class="chips"><li class="chip">Startup competition</li><li class="chip">Business forum</li><li class="chip">Startup incubator</li></ul>
+      <p><a href="https://suit.by/">Visit suit.by</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE EVENT + MISSIONS ================= -->
+<section class="section" id="event" aria-labelledby="event-title">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">The event</span>
+      <h2 id="event-title">Pick a mission. Build it in two days.</h2>
+      <p class="lead">For students and recent grads who like to build. Any major, any level: you'll team up, get mentors and ship a working prototype.</p>
+      <ul class="chips" aria-label="Who it's for"><li class="chip">Developers</li><li class="chip">Hardware &amp; robotics</li><li class="chip">Designers</li><li class="chip">Future founders</li><li class="chip">First-timers welcome</li></ul>
+    </header>
+    <span class="anchor" id="missions"></span>
+    <ol class="missions" aria-label="Missions">
+      <li data-drop style="--i:0"><button class="key key--cyan mkey" type="button" aria-pressed="false" data-mission="Robots in the Real World"><span class="key__face">
+        <span class="mkey-top"><span class="fn">F1</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V5M9.5 16h5M3 12.5v3M21 12.5v3"/><circle cx="12" cy="4" r="1.2"/><circle class="fill" cx="9.5" cy="12.5" r="1.3"/><circle class="fill" cx="14.5" cy="12.5" r="1.3"/></svg></span>
+        <span class="mkey-title">Robots in the Real World</span>
+        <span class="mkey-text">Machines that see, move and help: rovers, arms, drones and assistive devices.</span>
+        <span class="mkey-eg">e.g. recycling sorter · voice-controlled arm</span>
+        <span class="mkey-cta"><span class="when-off">Press to pick this mission</span><span class="when-on">✓ Picked: added to your application</span></span>
+      </span></button></li>
+      <li data-drop style="--i:1"><button class="key mkey" type="button" aria-pressed="false" data-mission="Agents at Work"><span class="key__face">
+        <span class="mkey-top"><span class="fn">F2</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M12 7.6l.9 2 2 .9-2 .9-.9 2-.9-2-2-.9 2-.9z"/></svg></span>
+        <span class="mkey-title">Agents at Work</span>
+        <span class="mkey-text">AI agents that take real tasks off people's plates at small businesses, campuses and teams.</span>
+        <span class="mkey-eg">e.g. booking agent · invoice chaser</span>
+        <span class="mkey-cta"><span class="when-off">Press to pick this mission</span><span class="when-on">✓ Picked: added to your application</span></span>
+      </span></button></li>
+      <li data-drop style="--i:2"><button class="key key--blue mkey" type="button" aria-pressed="false" data-mission="Resilient LA"><span class="key__face">
+        <span class="mkey-top"><span class="fn">F3</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.4-3 7.7-7 9.5-4-1.8-7-5.1-7-9.5V6z"/><path d="M12 8.5c1.8 1.6 2.8 3 2.8 4.6a2.8 2.8 0 0 1-5.6 0c0-1 .5-1.8 1.1-2.4.2 1 .8 1.5 1.5 1.6-.4-1.3-.3-2.6.2-3.8z"/></svg></span>
+        <span class="mkey-title">Resilient LA</span>
+        <span class="mkey-text">Tools that help communities prepare for and recover from wildfires, heat waves and other emergencies.</span>
+        <span class="mkey-eg">e.g. air-quality alerts · evacuation assistant</span>
+        <span class="mkey-cta"><span class="when-off">Press to pick this mission</span><span class="when-on">✓ Picked: added to your application</span></span>
+      </span></button></li>
+      <li data-drop style="--i:3"><button class="key mkey" type="button" aria-pressed="false" data-mission="Creators &amp; Culture"><span class="key__face">
+        <span class="mkey-top"><span class="fn">F4</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="10" width="18" height="10" rx="2"/><path d="M3.5 10L5 5.5h15.5L19 10"/><path d="M9.5 5.5L8 10M14.5 5.5L13 10"/></svg></span>
+        <span class="mkey-title">Creators &amp; Culture</span>
+        <span class="mkey-text">AI for LA's creative industries: film, music, games and the creator economy.</span>
+        <span class="mkey-eg">e.g. storyboard tool · remix app that respects artist consent</span>
+        <span class="mkey-cta"><span class="when-off">Press to pick this mission</span><span class="when-on">✓ Picked: added to your application</span></span>
+      </span></button></li>
+      <li data-drop style="--i:4"><button class="key key--dark mkey" type="button" aria-pressed="false" data-mission="Open Mission"><span class="key__face">
+        <span class="mkey-top"><span class="fn">F5</span><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.8 8.2l-2.3 5.3-5.3 2.3 2.3-5.3z"/></svg></span>
+        <span class="mkey-title">Open Mission</span>
+        <span class="mkey-text">Your own applied AI idea with a real user and a business case. Thinking like a founder? Start here.</span>
+        <span class="mkey-eg">e.g. anything that solves a real problem for real users</span>
+        <span class="mkey-cta"><span class="when-off">Press to pick this mission</span><span class="when-on">✓ Picked: added to your application</span></span>
+      </span></button></li>
+    </ol>
+    <p class="live" role="status" aria-live="polite" data-mission-live></p>
+    <div class="missions-foot">
+      <p>Not sure yet? Pick at the opening. Partners can bring a real challenge into any mission.</p>
+      <a class="key" href="#apply-partner" data-form="contact" data-type="partner"><span class="key__face">Bring a challenge <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LA SCENE: sunny hills, palms, a rover and a delivery drone (decoration only) ================= -->
+<div class="scene" aria-hidden="true" data-anim>
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" focusable="false">
+    <defs><path id="frond" d="M0 0C20-20 52-22 78 4C54-6 26-6 0 0Z"/></defs>
+    <g transform="translate(740 120)">
+      <g class="sun-rays" stroke="#10131C" stroke-width="5" stroke-linecap="round"><path d="M0-62V-80M0 62V80M-62 0H-80M62 0H80M44-44L56-56M-44-44L-56-56M44 44L56 56M-44 44L-56 56"/></g>
+      <circle r="46" fill="#FFD23F" stroke="#10131C" stroke-width="4"/>
+      <circle class="blinkc" cx="-14" cy="-6" r="4.5" fill="#10131C"/><circle class="blinkc" cx="14" cy="-6" r="4.5" fill="#10131C"/>
+      <path d="M-14 12Q0 26 14 12" fill="none" stroke="#10131C" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="-27" cy="8" r="5" fill="#FF8FA8" opacity=".8"/><circle cx="27" cy="8" r="5" fill="#FF8FA8" opacity=".8"/>
+    </g>
+    <g class="cloud"><g transform="translate(220 56)"><path d="M0 40a22 22 0 0 1 38-14 28 28 0 0 1 52 8 20 20 0 0 1 4 36H12A20 20 0 0 1 0 40Z" fill="#fff" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/></g></g>
+    <g class="cloud c2"><g transform="translate(560 30) scale(.78)"><path d="M0 40a22 22 0 0 1 38-14 28 28 0 0 1 52 8 20 20 0 0 1 4 36H12A20 20 0 0 1 0 40Z" fill="#fff" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/></g></g>
+    <path d="M0 214C110 170 230 160 350 188C470 214 560 150 720 156C860 160 980 212 1200 168V300H0Z" fill="#BFD3FF" stroke="#10131C" stroke-width="4"/>
+    <g transform="translate(620 154)"><text x="0" y="-4" text-anchor="middle" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="22" letter-spacing="5" fill="#fff" stroke="#10131C" stroke-width="3" paint-order="stroke" stroke-linejoin="round">HACK</text></g>
+    <path d="M0 252C180 208 330 214 480 238C640 262 760 214 920 222C1040 228 1130 250 1200 236V300H0Z" fill="#8FB0FF" stroke="#10131C" stroke-width="4"/>
+    <g transform="translate(130 258)"><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#10131C" stroke-width="12" stroke-linecap="round"/><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#C58B4E" stroke-width="6" stroke-linecap="round"/><g transform="translate(18 -118)"><g class="palm-top" fill="#1CB5A8" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"><use href="#frond" transform="rotate(-70)"/><use href="#frond" transform="rotate(-25)"/><use href="#frond" transform="rotate(20)"/><use href="#frond" transform="scale(-1 1) rotate(-70)"/><use href="#frond" transform="scale(-1 1) rotate(-25)"/><use href="#frond" transform="scale(-1 1) rotate(20)"/></g></g></g>
+    <g transform="translate(305 250) scale(.7)"><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#10131C" stroke-width="12" stroke-linecap="round"/><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#C58B4E" stroke-width="6" stroke-linecap="round"/><g transform="translate(18 -118)"><g class="palm-top" style="animation-delay:-2s" fill="#1CB5A8" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"><use href="#frond" transform="rotate(-70)"/><use href="#frond" transform="rotate(-25)"/><use href="#frond" transform="rotate(20)"/><use href="#frond" transform="scale(-1 1) rotate(-70)"/><use href="#frond" transform="scale(-1 1) rotate(-25)"/><use href="#frond" transform="scale(-1 1) rotate(20)"/></g></g></g>
+    <g transform="translate(450 252) scale(.85)"><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#10131C" stroke-width="12" stroke-linecap="round"/><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#C58B4E" stroke-width="6" stroke-linecap="round"/><g transform="translate(18 -118)"><g class="palm-top" style="animation-delay:-3s" fill="#1CB5A8" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"><use href="#frond" transform="rotate(-70)"/><use href="#frond" transform="rotate(-25)"/><use href="#frond" transform="rotate(20)"/><use href="#frond" transform="scale(-1 1) rotate(-70)"/><use href="#frond" transform="scale(-1 1) rotate(-25)"/><use href="#frond" transform="scale(-1 1) rotate(20)"/></g></g></g>
+    <g transform="translate(1060 258) scale(1.1)"><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#10131C" stroke-width="12" stroke-linecap="round"/><path d="M0 0C8-40 4-80 18-118" fill="none" stroke="#C58B4E" stroke-width="6" stroke-linecap="round"/><g transform="translate(18 -118)"><g class="palm-top" style="animation-delay:-1s" fill="#1CB5A8" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"><use href="#frond" transform="rotate(-70)"/><use href="#frond" transform="rotate(-25)"/><use href="#frond" transform="rotate(20)"/><use href="#frond" transform="scale(-1 1) rotate(-70)"/><use href="#frond" transform="scale(-1 1) rotate(-25)"/><use href="#frond" transform="scale(-1 1) rotate(20)"/></g></g></g>
+    <path d="M0 262C200 254 400 266 600 258C800 250 1000 264 1200 256V300H0Z" fill="#3B4150" stroke="#10131C" stroke-width="4"/>
+    <path class="road-dash" d="M-20 288C200 284 400 292 600 287C800 282 1000 290 1220 285" fill="none" stroke="#FFD23F" stroke-width="5" stroke-dasharray="26 22" stroke-linecap="round"/>
+    <g transform="translate(0 54)"><g class="plane-move"><g class="plane-bob">
+      <path d="M52 0L84 4" fill="none" stroke="#10131C" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(84 4)"><g class="banner">
+        <path d="M0-17H198L184 0L198 17H0Z" fill="#FFD23F" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"/>
+        <text x="92" y="5.5" text-anchor="middle" font-family="'JetBrains Mono',ui-monospace,monospace" font-weight="600" font-size="14" letter-spacing="1" fill="#10131C">JAN 30–31 · APPLY!</text>
+      </g></g>
+      <path d="M32-2L52-26H58L55 0Z" fill="#2457FF" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M-42 0C-42-14-22-18 0-18C26-18 44-12 56-2C44 10 26 14 0 14C-22 14-42 12-42 0Z" fill="#fff"/>
+      <path d="M-4-17C8-18 20-16 30-12L28 12C18 13 6 13-4 13Z" fill="#FFD23F"/>
+      <path d="M-42 0C-42-14-22-18 0-18C26-18 44-12 56-2C44 10 26 14 0 14C-22 14-42 12-42 0Z" fill="none" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="-14" cy="-12" r="10" fill="#4FD8F3" stroke="#10131C" stroke-width="3.5"/>
+      <circle cx="-14" cy="-12" r="6" fill="#FFD23F"/><circle cx="-16" cy="-13" r="1.3" fill="#10131C"/><circle cx="-12" cy="-13" r="1.3" fill="#10131C"/><path d="M-16.5-9.5Q-14-7.5-11.5-9.5" fill="none" stroke="#10131C" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M-14 4C-4 2 20 2 30 6C22 14-6 14-14 4Z" fill="#2457FF" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"/>
+      <path d="M-20 14L-22 24" fill="none" stroke="#10131C" stroke-width="3.5" stroke-linecap="round"/><circle cx="-22" cy="26" r="5" fill="#10131C"/>
+      <g transform="translate(-44 0)"><rect x="-2" y="-4" width="7" height="8" rx="3" fill="#10131C"/><ellipse class="prop" cx="-2" cy="0" rx="3" ry="19" fill="#4FD8F3" stroke="#10131C" stroke-width="2.5" opacity=".85"/></g>
+    </g></g></g>
+    <g transform="translate(0 276)"><g class="rover-move"><g class="rover-bob">
+      <path d="M10-72L16-88" fill="none" stroke="#10131C" stroke-width="4" stroke-linecap="round"/><circle class="bit-light" cx="17" cy="-91" r="5" fill="#FF8FA8" stroke="#10131C" stroke-width="3"/>
+      <path d="M-20-48C-20-76 20-76 20-48Z" fill="#4FD8F3" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/>
+      <circle class="blinkc" cx="-6" cy="-58" r="3.5" fill="#10131C"/><circle class="blinkc" cx="8" cy="-58" r="3.5" fill="#10131C"/>
+      <rect x="-40" y="-52" width="80" height="30" rx="11" fill="#FFD23F" stroke="#10131C" stroke-width="4"/>
+      <rect x="-28" y="-44" width="22" height="9" rx="4.5" fill="#fff" opacity=".7"/>
+      <g transform="translate(-22 -12)"><circle r="13" fill="#10131C"/><g class="wheel"><circle r="5" fill="#fff"/><path d="M0-5V5M-5 0H5" stroke="#10131C" stroke-width="2"/></g></g>
+      <g transform="translate(22 -12)"><circle r="13" fill="#10131C"/><g class="wheel"><circle r="5" fill="#fff"/><path d="M0-5V5M-5 0H5" stroke="#10131C" stroke-width="2"/></g></g>
+    </g></g></g>
+  </svg>
+</div>
+
+<!-- ================= PERKS + HOW IT WORKS ================= -->
+<section class="section band" id="perks" aria-labelledby="perks-title">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">What you get</span>
+      <h2 id="perks-title">More than a weekend of code</h2>
+    </header>
+    <ul class="tiles">
+      <li class="tile" data-drop style="--i:0"><span class="ico ico--c"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20c0-3.6 2.9-6.5 6.5-6.5"/><path d="M17 12l1 2.2 2.2 1-2.2 1L17 18.5l-1-2.3-2.2-1 2.2-1z"/></svg></span><div><h3>Free 1:1 AI mentoring</h3><p>Engineers and founders help you scope, build and debug.</p></div></li>
+      <li class="tile" data-drop style="--i:1"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg></span><div><h3>AI seminar &amp; workshops</h3><p>Hands-on sessions on AI agents, robotics and pitching.</p></div></li>
+      <li class="tile" data-drop style="--i:2"><span class="ico ico--y"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a3 3 0 0 0 3 3M16 6h3v1a3 3 0 0 1-3 3M12 13v4M9 20h6M10 17h4"/></svg></span><div><h3>Prizes that launch you</h3><p>A scholarship for an AI program, mentorship and more.</p></div></li>
+      <li class="tile" data-drop style="--i:3"><span class="ico ico--d"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M6 15l4-4 3 3 5-6"/><path d="M15 8h3v3"/></svg></span><div><h3>Investors in the room</h3><p>Pitch to founders and investors from the Su&amp;IT network.</p></div></li>
+      <li class="tile" data-drop style="--i:4"><span class="ico ico--c"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span><div><h3>Your next team</h3><p>Meet builders from schools across Southern California.</p></div></li>
+      <li class="tile" data-drop style="--i:5"><span class="ico ico--y"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 3c-2 1.5-3 4-3 7h3v11"/></svg></span><div><h3>Meals &amp; swag</h3><p>Food on both days and merch for every hacker.</p></div></li>
+    </ul>
+    <div class="how">
+      <div>
+        <h3>How it works</h3>
+        <ol class="steps"><li>Apply in two minutes</li><li>Get your decision by email</li><li>Build with your team for two days</li><li>Demo your project to the jury</li></ol>
+      </div>
+      <div>
+        <h3>How we judge</h3>
+        <ul class="judge"><li><b>01</b> Real-world impact</li><li><b>02</b> Technical execution</li><li><b>03</b> Design &amp; usability</li><li><b>04</b> Pitch &amp; startup potential</li></ul>
+        <p class="fine">Every team demos to the jury. Finalists pitch on the main stage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KEY DATES + SCHEDULE ================= -->
+<section class="section" id="dates" aria-labelledby="dates-title">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">Key dates</span>
+      <h2 id="dates-title">Mark your calendar</h2>
+      <p class="lead">Dates may be updated. Follow us for news.</p>
+    </header>
+    <ol class="timeline">
+      <li class="milestone" data-drop style="--i:0"><span class="when">Dec 2026 <span class="tba">TBA</span></span><b>Applications open</b></li>
+      <li class="milestone" data-drop style="--i:1"><span class="when">Jan 2027 <span class="tba">TBA</span></span><b>Online AI seminar</b></li>
+      <li class="milestone" data-drop style="--i:2"><span class="when">Jan 2027 <span class="tba">TBA</span></span><b>Applications close</b></li>
+      <li class="milestone is-main" data-drop style="--i:3"><span class="when">Jan 30–31, 2027</span><b>The hackathon</b></li>
+      <li class="milestone" data-drop style="--i:4"><span class="when">May 2027 <span class="tba">TBA</span></span><b>Demo Day in Downtown LA</b></li>
+    </ol>
+    <div class="days">
+      <article class="day" data-drop style="--i:0">
+        <header class="day-head"><span class="day-badge">DAY 1</span><h3>Sat, Jan 30</h3><span class="day-hours">9:00 AM – 9:00 PM</span></header>
+        <ol class="slots">
+          <li><span class="t">9:00 AM</span><span class="w">Check-in &amp; breakfast</span></li>
+          <li><span class="t">10:00 AM</span><span class="w">Opening &amp; mission briefings</span></li>
+          <li><span class="t">10:45 AM</span><span class="w">Team matching for solo hackers</span></li>
+          <li class="is-key"><span class="t">11:00 AM</span><span class="w">Hacking starts</span></li>
+          <li><span class="t">1:30 PM</span><span class="w">Workshops: AI agents · Robotics 101</span></li>
+          <li><span class="t">3:00 PM</span><span class="w">1:1 mentor office hours</span></li>
+          <li><span class="t">6:00 PM</span><span class="w">Dinner + founder fireside chat</span></li>
+          <li><span class="t">9:00 PM</span><span class="w">Doors close. Rest up!</span></li>
+        </ol>
+      </article>
+      <article class="day" data-drop style="--i:1">
+        <header class="day-head"><span class="day-badge">DAY 2</span><h3>Sun, Jan 31</h3><span class="day-hours">9:00 AM – 6:00 PM</span></header>
+        <ol class="slots">
+          <li><span class="t">9:00 AM</span><span class="w">Doors open &amp; breakfast</span></li>
+          <li><span class="t">10:00 AM</span><span class="w">Pitch clinic with investors</span></li>
+          <li class="is-key"><span class="t">1:00 PM</span><span class="w">Hacking ends: submit your project</span></li>
+          <li><span class="t">1:30 PM</span><span class="w">Demos &amp; judging</span></li>
+          <li><span class="t">3:30 PM</span><span class="w">Finalist pitches on the main stage</span></li>
+          <li class="is-key"><span class="t">5:00 PM</span><span class="w">Awards &amp; closing</span></li>
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRIZES ================= -->
+<section class="section band" id="prizes" aria-labelledby="prizes-title">
+  <div class="wrap has-buddy">
+    <div class="buddy" aria-hidden="true" data-anim>
+      <svg viewBox="0 0 120 150" focusable="false">
+        <ellipse cx="60" cy="139" rx="32" ry="5" fill="#10131C" opacity=".15"/>
+        <g class="tw" style="--d:0s"><path d="M104 14l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#FFD23F" stroke="#10131C" stroke-width="2.5" stroke-linejoin="round"/></g>
+        <g class="tw" style="--d:.7s"><path d="M12 28l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z" fill="#4FD8F3" stroke="#10131C" stroke-width="2.5" stroke-linejoin="round"/></g>
+        <g class="troph">
+          <path d="M30 34H16c0 22 8 34 24 38" fill="none" stroke="#10131C" stroke-width="11" stroke-linecap="round"/><path d="M30 34H16c0 22 8 34 24 38" fill="none" stroke="#FFD23F" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M90 34h14c0 22-8 34-24 38" fill="none" stroke="#10131C" stroke-width="11" stroke-linecap="round"/><path d="M90 34h14c0 22-8 34-24 38" fill="none" stroke="#FFD23F" stroke-width="4.5" stroke-linecap="round"/>
+          <path d="M28 18H92V56C92 80 78 94 60 94S28 80 28 56Z" fill="#FFD23F" stroke="#10131C" stroke-width="4.5" stroke-linejoin="round"/>
+          <path d="M39 28V54C39 64 43 71 49 75" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+          <rect x="52" y="94" width="16" height="18" fill="#FFD23F" stroke="#10131C" stroke-width="4.5"/>
+          <rect x="32" y="112" width="56" height="18" rx="7" fill="#2457FF" stroke="#10131C" stroke-width="4.5"/>
+          <circle class="blinkc" cx="50" cy="50" r="5" fill="#10131C"/><circle class="blinkc" cx="70" cy="50" r="5" fill="#10131C"/>
+          <circle cx="43" cy="62" r="5" fill="#FF8FA8" opacity=".85"/><circle cx="77" cy="62" r="5" fill="#FF8FA8" opacity=".85"/>
+          <path d="M52 61Q60 70 68 61" fill="none" stroke="#10131C" stroke-width="4" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <header class="section-head">
+      <span class="kicker">Prizes</span>
+      <h2 id="prizes-title">Prizes that launch you</h2>
+    </header>
+    <div class="podium">
+      <article class="prize prize--1" data-drop style="--i:0"><span class="place">1ST PLACE</span><h3>AI program scholarship</h3><p>A grant to study AI at a world-renowned university.</p></article>
+      <article class="prize prize--2" data-drop style="--i:1"><span class="place">2ND PLACE</span><h3>Mentorship &amp; launch support</h3><p>1:1 mentoring and help launching your project with the Su&amp;IT incubator.</p></article>
+      <article class="prize prize--3" data-drop style="--i:2"><span class="place">3RD PLACE</span><h3>Certificate</h3><p>A certificate toward tools or courses for your team.</p></article>
+    </div>
+    <p class="finalists"><span class="chip">FINALISTS</span>Every finalist team pitches at Su&amp;IT Demo Day in Downtown LA, May 2027.</p>
+    <p class="fine">Prizes may be subject to tax reporting and withholding. Winners will be asked for a W-9 or W-8BEN before payout.</p>
+  </div>
+</section>
+
+<!-- ================= JURY & MENTORS ================= -->
+<section class="section" id="jury" aria-labelledby="jury-title">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">Jury &amp; mentors</span>
+      <h2 id="jury-title">International jury and mentors</h2>
+      <p class="lead">Founders, investors and AI engineers from the Su&amp;IT network. Names coming soon.</p>
+    </header>
+    <ul class="tiles">
+      <li class="tile" data-drop style="--i:0"><span class="ico ico--d"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span><div><h3>Jury</h3><p>Founders and investors who back early-stage startups.</p></div></li>
+      <li class="tile" data-drop style="--i:1"><span class="ico ico--c"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20c0-3.6 2.9-6.5 6.5-6.5"/><path d="M17 12l1 2.2 2.2 1-2.2 1L17 18.5l-1-2.3-2.2-1 2.2-1z"/></svg></span><div><h3>Mentors</h3><p>AI and robotics engineers on the floor both days.</p></div></li>
+      <li class="tile" data-drop style="--i:2"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg></span><div><h3>Seminar hosts</h3><p>Experts who use AI at work every day.</p></div></li>
+    </ul>
+    <div class="missions-foot">
+      <p>Want to judge, mentor or speak?</p>
+      <a class="key" href="#apply-speaker" data-form="contact" data-type="speaker"><span class="key__face">Become a speaker or mentor <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARTNERS ================= -->
+<section class="section band" id="partners" aria-labelledby="partners-title">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">Partners</span>
+      <h2 id="partners-title">Partner with us</h2>
+      <p class="lead">For companies, universities and clubs who want to meet LA's next builders.</p>
+    </header>
+    <div class="partner-grid">
+      <div class="logo-wall" role="group" aria-label="Partner logos, to be announced">
+        <div class="slot lg">LEAD PARTNER<br>your logo here</div>
+        <div class="slot">MISSION PARTNER</div>
+        <div class="slot">WORKSHOP PARTNER</div>
+        <div class="slot">COMMUNITY PARTNER</div>
+        <div class="slot">MEDIA PARTNER</div>
+      </div>
+      <div class="why" data-drop>
+        <h3>What partners get</h3>
+        <ul class="ticks">
+          <li><strong>Meet the builders:</strong> your next interns, hires and early users. Opt-in résumé book.</li>
+          <li><strong>Bring a real challenge:</strong> get working prototypes in two days.</li>
+          <li><strong>Teach a workshop:</strong> put your tools in students' hands.</li>
+          <li><strong>Flexible formats:</strong> talks, mentors, credits or in-kind support.</li>
+        </ul>
+        <div class="cta-row">
+          <a class="key key--blue" href="#apply-partner" data-form="contact" data-type="partner"><span class="key__face">Become a partner <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <span class="email-text">info@suit.by</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap has-buddy">
+    <div class="buddy buddy--q" aria-hidden="true" data-anim data-owl>
+      <!-- Professor Hoot: an owl in a graduation cap who answers the questions -->
+      <svg viewBox="0 0 120 140" focusable="false">
+        <ellipse cx="60" cy="133" rx="30" ry="4.5" fill="#10131C" opacity=".15"/>
+        <g class="owl-bob">
+          <rect x="38" y="120" width="18" height="9" rx="4.5" fill="#FFD23F" stroke="#10131C" stroke-width="3.5"/><rect x="64" y="120" width="18" height="9" rx="4.5" fill="#FFD23F" stroke="#10131C" stroke-width="3.5"/>
+          <path d="M26 42L20 20L46 30Z" fill="#2457FF" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/><path d="M94 42L100 20L74 30Z" fill="#2457FF" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M22 70C22 40 38 24 60 24S98 40 98 70V100C98 116 82 126 60 126S22 116 22 100Z" fill="#2457FF" stroke="#10131C" stroke-width="4.5"/>
+          <ellipse cx="60" cy="100" rx="25" ry="20" fill="#EAF0FF" stroke="#10131C" stroke-width="3"/>
+          <path d="M47 92q4 5 8 0M61 92q4 5 8 0M54 103q4 5 8 0M40 104q4 5 8 0M68 104q4 5 8 0" fill="none" stroke="#10131C" stroke-width="3" stroke-linecap="round"/>
+          <path d="M24 72C10 82 12 106 28 112C30 98 30 84 24 72Z" fill="#1638B0" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/>
+          <g class="owl-wing-r"><path d="M96 72C110 82 108 106 92 112C90 98 90 84 96 72Z" fill="#1638B0" stroke="#10131C" stroke-width="4" stroke-linejoin="round"/></g>
+          <circle class="blinkc" cx="45" cy="60" r="15" fill="#fff" stroke="#10131C" stroke-width="4"/><circle class="blinkc" cx="75" cy="60" r="15" fill="#fff" stroke="#10131C" stroke-width="4"/>
+          <g class="owl-look"><circle cx="46" cy="62" r="6.5" fill="#10131C"/><circle cx="76" cy="62" r="6.5" fill="#10131C"/><circle cx="48" cy="59.5" r="2" fill="#fff"/><circle cx="78" cy="59.5" r="2" fill="#fff"/></g>
+          <path d="M54 72L66 72L60 86Z" fill="#FFD23F" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M36 26L60 14L84 26L60 38Z" fill="#10131C" stroke="#10131C" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M84 26V40" fill="none" stroke="#FFD23F" stroke-width="3.5" stroke-linecap="round"/><circle cx="84" cy="42" r="3.5" fill="#FFD23F" stroke="#10131C" stroke-width="2"/>
+        </g>
+        <g><path d="M92 6H114a8 8 0 0 1 8 8V24a8 8 0 0 1-8 8H100L94 38V32H92a8 8 0 0 1-8-8V14a8 8 0 0 1 8-8Z" transform="translate(-6 -4)" fill="#fff" stroke="#10131C" stroke-width="3.5" stroke-linejoin="round"/>
+          <text class="owl-q" x="103" y="22" text-anchor="middle" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="17" fill="#2457FF">?</text>
+          <text class="owl-x" x="103" y="22" text-anchor="middle" font-family="Unbounded,'Arial Black',sans-serif" font-weight="800" font-size="17" fill="#FF3D71">!</text></g>
+      </svg>
+    </div>
+    <header class="section-head">
+      <span class="kicker">FAQ</span>
+      <h2 id="faq-title">Questions, answered</h2>
+    </header>
+    <div class="faq">
+      <div class="key faq-key"><details class="key__face"><summary>Who can apply?</summary><p class="ans">University students (undergrad or grad) and recent graduates, 18 or older, from any major.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>I'm new to hackathons. Can I join?</summary><p class="ans">Yes. We run beginner workshops, mentors walk the floor, and we help solo hackers find a team.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>How much does it cost?</summary><p class="ans">Nothing. The hackathon is free for accepted hackers, with meals on both days.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>Is it overnight?</summary><p class="ans">No. Doors are open 9 AM–9 PM on Saturday and 9 AM–6 PM on Sunday. You can keep building at home.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>How do teams work?</summary><p class="ans">Teams have 2–4 people. Everyone applies on their own. No team yet? Join team matching at the opening.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>What should I bring?</summary><p class="ans">Your laptop, charger and a photo ID. We'll have a hardware lab with basic tools and parts.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>Can I start building before the event?</summary><p class="ans">Plan and learn in advance, but build during the hackathon. Open-source code, public APIs and AI tools are fine. Just credit them.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>Where is it?</summary><p class="ans">In the Los Angeles area. We'll post the address, parking and transit options as soon as the venue is confirmed.</p></details></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= APPLY / CONTACT ================= -->
+<section class="section apply" id="apply" aria-labelledby="apply-title">
+  <!-- Shareable deep links -->
+  <span class="anchor" id="apply-hacker"></span><span class="anchor" id="apply-contact"></span><span class="anchor" id="apply-partner"></span><span class="anchor" id="apply-speaker"></span><span class="anchor" id="apply-media"></span>
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">Apply</span>
+      <h2 id="apply-title">Ready? Press Enter.</h2>
+      <p class="lead">Hackers apply in two minutes. Partners, speakers, media and anyone with a question use the contact form.</p>
+    </header>
+    <noscript><p class="form-card" style="padding:20px;margin-bottom:20px">These forms need JavaScript. Please turn it on, or email us at info@suit.by.</p></noscript>
+    <div class="form-card">
+      <div class="form-tabs" role="tablist" aria-label="Choose a form">
+        <button class="key key--lg" type="button" role="tab" id="tab-hacker" aria-controls="panel-hacker" aria-selected="true" data-tab="hacker"><span class="key__face">I want to hack <span aria-hidden="true">↵</span></span></button>
+        <button class="key key--lg" type="button" role="tab" id="tab-contact" aria-controls="panel-contact" aria-selected="false" data-tab="contact"><span class="key__face">Partner, speak or ask</span></button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-hacker" aria-labelledby="tab-hacker">
+        <div class="panel-info">
+          <h3>Apply as a hacker</h3>
+          <ul class="ticks"><li>Two days of building with mentors</li><li>Workshops on AI agents, robotics and pitching</li><li>A shot at the scholarship and Demo Day</li></ul>
+          <h4>What happens next</h4>
+          <ol class="steps"><li>We review applications on a rolling basis</li><li>You get a decision by email</li><li>Show up on Jan 30 with your laptop</li></ol>
+        </div>
+        <form class="form" data-role="hacker" method="post" autocomplete="on">
+          <p class="req-note">Fields marked <span class="req">*</span> are required</p>
+          <div class="two">
+            <div class="field"><label for="h-name">Full name <span class="req" aria-hidden="true">*</span></label><input id="h-name" name="name" required autocomplete="name" maxlength="120"></div>
+            <div class="field"><label for="h-email">Email <span class="req" aria-hidden="true">*</span></label><input id="h-email" name="email" type="email" required autocomplete="email" maxlength="160"></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="h-school">University <span class="req" aria-hidden="true">*</span></label><input id="h-school" name="school" required autocomplete="organization" maxlength="160" list="socal-schools">
+              <datalist id="socal-schools"><option value="Cal Poly Pomona"><option value="UCLA"><option value="USC"><option value="Caltech"><option value="UC Irvine"><option value="UC Riverside"><option value="Cal State LA"><option value="Cal State Long Beach"><option value="Cal State Fullerton"><option value="Cal State Northridge"><option value="Loyola Marymount University"><option value="Pepperdine University"><option value="Chapman University"><option value="Harvey Mudd College"><option value="Pomona College"></datalist></div>
+            <div class="field"><label for="h-level">Level of study <span class="req" aria-hidden="true">*</span></label><select id="h-level" name="level" required><option value="">Choose…</option><option>Undergraduate</option><option>Graduate (MS / PhD)</option><option>Recent graduate</option><option>Other</option></select></div>
+          </div>
+          <fieldset class="field"><legend>Hackathons you've attended <span class="req" aria-hidden="true">*</span></legend>
+            <div class="picks"><label class="key pick"><input type="radio" name="experience" value="first" required><span class="key__face">This is my first!</span></label><label class="key pick"><input type="radio" name="experience" value="1-3"><span class="key__face">1–3</span></label><label class="key pick"><input type="radio" name="experience" value="4+"><span class="key__face">4+</span></label></div>
+          </fieldset>
+          <fieldset class="field"><legend>What do you bring? <span class="opt">(optional, pick any)</span></legend>
+            <div class="picks"><label class="key pick"><input type="checkbox" name="skills" value="Software"><span class="key__face">Software</span></label><label class="key pick"><input type="checkbox" name="skills" value="Hardware"><span class="key__face">Hardware</span></label><label class="key pick"><input type="checkbox" name="skills" value="AI / ML"><span class="key__face">AI / ML</span></label><label class="key pick"><input type="checkbox" name="skills" value="Design"><span class="key__face">Design</span></label><label class="key pick"><input type="checkbox" name="skills" value="Business"><span class="key__face">Business</span></label></div>
+          </fieldset>
+          <div class="field"><label for="h-mission">Mission you're most excited about <span class="opt">(optional)</span></label><select id="h-mission" name="mission"><option value="">Not sure yet</option><option>Robots in the Real World</option><option>Agents at Work</option><option>Resilient LA</option><option>Creators &amp; Culture</option><option>Open Mission</option></select></div>
+          <fieldset class="field"><legend>Team <span class="req" aria-hidden="true">*</span></legend>
+            <div class="picks"><label class="key pick"><input type="radio" name="team" value="has team" required><span class="key__face">I have a team</span></label><label class="key pick"><input type="radio" name="team" value="needs team"><span class="key__face">Find me a team</span></label></div>
+          </fieldset>
+          <div class="field"><label for="h-link">GitHub, LinkedIn or portfolio <span class="opt">(optional)</span></label><input id="h-link" name="link" type="text" inputmode="url" autocomplete="url" placeholder="github.com/you" maxlength="300"></div>
+          <div class="hp" aria-hidden="true"><label for="h-hpx">Do not fill this in</label><input id="h-hpx" name="hpx" tabindex="-1" autocomplete="off"></div>
+          <label class="consent"><input type="checkbox" name="share_with_partners" value="yes"><span>Share my application with hiring partners <span class="opt">(optional)</span></span></label>
+          <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>I'm 18+, agree to the <button type="button" class="link-btn" data-open-dialog="dlg-coc">Code of Conduct</button> and <button type="button" class="link-btn" data-open-dialog="dlg-privacy">Privacy Notice</button>, and understand the event will be photographed (you can opt out at check-in). <span class="req" aria-hidden="true">*</span></span></label>
+          <button class="key key--yellow key--lg" type="submit"><span class="key__face">Send application <span class="kbd" aria-hidden="true">↵</span></span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-contact" aria-labelledby="tab-contact">
+        <div class="panel-info">
+          <h3>Partner, speak or ask</h3>
+          <ul class="ticks"><li>Partners: bring a challenge, a workshop, mentors or credits</li><li>Speakers, mentors and judges</li><li>Media and student press</li><li>Anyone with a question</li></ul>
+          <h4>What happens next</h4>
+          <ol class="steps"><li>We reply by email within a few days</li><li>We agree on the format together</li></ol>
+        </div>
+        <form class="form" data-role="contact" method="post" autocomplete="on">
+          <p class="req-note">Fields marked <span class="req">*</span> are required</p>
+          <fieldset class="field"><legend>I'm reaching out as <span class="req" aria-hidden="true">*</span></legend>
+            <div class="picks"><label class="key pick"><input type="radio" name="contact_type" value="partner" required><span class="key__face">Partner</span></label><label class="key pick"><input type="radio" name="contact_type" value="speaker"><span class="key__face">Speaker or mentor</span></label><label class="key pick"><input type="radio" name="contact_type" value="media"><span class="key__face">Media</span></label><label class="key pick"><input type="radio" name="contact_type" value="question"><span class="key__face">I have a question</span></label></div>
+          </fieldset>
+          <div class="two">
+            <div class="field"><label for="c-name">Your name <span class="req" aria-hidden="true">*</span></label><input id="c-name" name="name" required autocomplete="name" maxlength="120"></div>
+            <div class="field"><label for="c-email">Email <span class="req" aria-hidden="true">*</span></label><input id="c-email" name="email" type="email" required autocomplete="email" maxlength="160"></div>
+          </div>
+          <div class="two">
+            <div class="field"><label for="c-org">Organization or outlet <span class="opt">(optional)</span></label><input id="c-org" name="organization" autocomplete="organization" maxlength="160"></div>
+            <div class="field"><label for="c-link">Website or LinkedIn <span class="opt">(optional)</span></label><input id="c-link" name="link" type="text" inputmode="url" autocomplete="url" placeholder="yourcompany.com" maxlength="300"></div>
+          </div>
+          <div class="field"><label for="c-msg">Message <span class="req" aria-hidden="true">*</span></label><textarea id="c-msg" name="message" required maxlength="2000" placeholder="Tell us what you have in mind."></textarea></div>
+          <div class="hp" aria-hidden="true"><label for="c-hpx">Do not fill this in</label><input id="c-hpx" name="hpx" tabindex="-1" autocomplete="off"></div>
+          <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>I agree to the <button type="button" class="link-btn" data-open-dialog="dlg-privacy">Privacy Notice</button>. <span class="req" aria-hidden="true">*</span></span></label>
+          <button class="key key--blue key--lg" type="submit"><span class="key__face">Send message <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 3L10 14"/><path d="M21 3l-7 18-4-7-7-4z"/></svg></span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="footer-bit" aria-hidden="true" data-anim data-footer-bit></div>
+  <div class="wrap footer-grid">
+    <div>
+      <a class="logo" href="#top" aria-label="Su&amp;IT AI Hackathon, back to top"><span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span><span class="logo-text">AI Hackathon</span></a>
+      <p>Applied AI &amp; Robotics Hackathon · Jan 30–31, 2027 · Los Angeles area</p>
+      <p>Organized by Su&amp;IT.</p>
+    </div>
+    <div>
+      <h2 class="footer-h">Contact</h2>
+      <span class="email-text">info@suit.by</span>
+      <ul class="socials" aria-label="Su&amp;IT contacts and social media">
+        <li><a class="key key--sm key--icon" href="mailto:info@suit.by" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="#" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="#" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="#" data-social aria-label="WhatsApp"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.8-1.3-2.3-2.3l1-1-1-2z"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="#" data-social aria-label="LinkedIn"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg></span></a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-h">Info</h2>
+      <ul class="footer-links">
+        <li><button type="button" class="link-btn" data-open-dialog="dlg-coc">Code of Conduct</button></li>
+        <li><button type="button" class="link-btn" data-open-dialog="dlg-privacy">Privacy &amp; cookies</button></li>
+        <li><button type="button" class="link-btn" data-cookie-settings>Cookie settings</button></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span data-year>2026</span> Su&amp;IT. All rights reserved.</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- Cookie notice: stays until the visitor chooses -->
+<div class="cookie" role="region" aria-label="Cookie notice" data-cookie hidden>
+  <p>We use cookies to keep this page working and, if you agree, to count visits anonymously. <button type="button" class="link-btn" data-open-dialog="dlg-privacy">Learn more</button></p>
+  <div class="cookie-keys">
+    <button class="key key--sm" type="button" data-cookie-choice="declined"><span class="key__face">Decline</span></button>
+    <button class="key key--blue key--sm" type="button" data-cookie-choice="accepted"><span class="key__face">Accept</span></button>
+  </div>
+</div>
+
+<!-- ================= Dialogs ================= -->
+<dialog class="dialog" id="dlg-coc" aria-labelledby="coc-title">
+  <div class="dialog-body">
+    <form method="dialog" class="dialog-x"><button class="key key--sm key--icon" aria-label="Close"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button></form>
+    <h2 id="coc-title">Code of Conduct</h2>
+    <p>Su&amp;IT AI Hackathon is for everyone. We are committed to a friendly, safe and harassment-free event for all participants, mentors, judges, partners, volunteers and staff, regardless of gender, gender identity, age, sexual orientation, disability, appearance, race, ethnicity, nationality, religion or tech stack.</p>
+    <ul>
+      <li>Be kind and respectful. Critique ideas, not people.</li>
+      <li>No harassment, intimidation, discrimination or unwanted attention, in person or online.</li>
+      <li>Keep it safe: follow venue rules, hardware-lab safety briefings and organizer instructions.</li>
+      <li>Build honestly: no plagiarism. Credit the open-source code, APIs and AI tools you use.</li>
+      <li>Respect privacy: don't photograph, record or share others without their consent.</li>
+    </ul>
+    <p>If something happens, talk to any organizer on site or email info@suit.by. We will act quickly and confidentially. Organizers may warn, disqualify or remove anyone who breaks these rules.</p>
+  </div>
+</dialog>
+<dialog class="dialog" id="dlg-privacy" aria-labelledby="privacy-title">
+  <div class="dialog-body">
+    <form method="dialog" class="dialog-x"><button class="key key--sm key--icon" aria-label="Close"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button></form>
+    <h2 id="privacy-title">Privacy &amp; cookies</h2>
+    <p>We collect only what you submit in these forms (such as your name, email, school and answers) to review applications, contact you about the event and plan logistics.</p>
+    <ul>
+      <li>Your data is stored in Su&amp;IT's Google Workspace and is accessible only to the organizing team.</li>
+      <li>We never sell your data. We share hacker applications with hiring partners only if you tick the opt-in box.</li>
+      <li>We delete application data within 12 months after the event, or sooner on request: email info@suit.by.</li>
+      <li>Photos and video may be taken at the event. Tell the registration desk if you'd rather not be photographed.</li>
+      <li>Cookies: this page remembers your cookie choice in your browser. Visits are counted only if you accept.</li>
+    </ul>
+  </div>
+</dialog>
+<dialog class="dialog" id="dlg-success" aria-labelledby="success-title">
+  <div class="confetti" aria-hidden="true" data-confetti></div>
+  <div class="dialog-body">
+    <form method="dialog" class="dialog-x"><button class="key key--sm key--icon" aria-label="Close"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button></form>
+    <span class="ok">✓ sent</span>
+    <h2 id="success-title" data-success-title>You're in the queue!</h2>
+    <p data-success-text>We review applications on a rolling basis and will email you a decision.</p>
+    <p class="fine" data-success-demo hidden>Demo mode: the form isn't connected yet, so nothing was sent.</p>
+    <div class="success-extra" data-success-hacker>
+      <h3>Save the date</h3>
+      <div class="row">
+        <a class="key key--sm" data-gcal="1" target="_blank" rel="noopener" href="#"><span class="key__face">Google: Sat</span></a>
+        <a class="key key--sm" data-gcal="2" target="_blank" rel="noopener" href="#"><span class="key__face">Google: Sun</span></a>
+        <a class="key key--sm" href="suit-ai-hackathon-2027.ics" data-ics><span class="key__face">Apple / Outlook</span></a>
+      </div>
+      <div data-share-block>
+        <h3>Bring a friend</h3>
+        <div class="share-row">
+          <input class="share-url" type="text" readonly value="" aria-label="Link to the hackathon page" data-share-url>
+          <button class="key key--cyan key--sm" type="button" data-copy><span class="key__face">Copy link</span></button>
+          <button class="key key--sm" type="button" data-share hidden><span class="key__face">Share…</span></button>
+        </div>
+        <p class="share-status" role="status" aria-live="polite" data-share-status></p>
+      </div>
+    </div>
+    <form method="dialog" class="dialog-done"><button class="key key--yellow"><span class="key__face">Done</span></button></form>
+  </div>
+</dialog>
+
+<script>
+/* ===== Settings you may edit =====
+   formEndpoint : paste the Google Apps Script Web App URL (see README). Empty = demo mode, nothing is sent.
+   draftMode    : true = always show the "items to confirm" panel (same as adding ?draft to the URL). */
+window.HACK_CONFIG = Object.assign({
+  formEndpoint: '',
+  eventStart: '2027-01-30T09:00:00-08:00',
+  eventEnd: '2027-01-31T18:00:00-08:00',
+  eventUrl: '', // TODO(launch): e.g. 'https://suit.by/hackathon/' (used by the share button); empty = this page
+  contactEmail: 'info@suit.by',
+  draftMode: false
+}, window.HACK_CONFIG || {});
+
+(function () {
+  'use strict';
+  var CONFIG = window.HACK_CONFIG;
+  var $ = function (s, el) { return (el || document).querySelector(s); };
+  var $$ = function (s, el) { return Array.prototype.slice.call((el || document).querySelectorAll(s)); };
+  var reduceMotion = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var header = $('[data-header]');
+
+  /* ---- dialogs ---- */
+  function openDialog(d) {
+    if (typeof d === 'string') d = document.getElementById(d);
+    if (!d) return;
+    if (typeof d.showModal === 'function') { if (!d.open) d.showModal(); } else d.setAttribute('open', '');
+  }
+  function closeDialog(d) { if (typeof d.close === 'function') d.close(); else d.removeAttribute('open'); }
+  $$('[data-open-dialog]').forEach(function (b) { b.addEventListener('click', function () { openDialog(b.getAttribute('data-open-dialog')); }); });
+  $$('dialog').forEach(function (d) {
+    d.addEventListener('click', function (e) { // a click on the dim backdrop closes; a click on the dialog's own padding does not
+      if (e.target !== d) return;
+      var r = d.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeDialog(d);
+    });
+    $$('form[method="dialog"] button', d).forEach(function (b) {
+      b.addEventListener('click', function (e) { if (typeof d.close !== 'function') { e.preventDefault(); d.removeAttribute('open'); } });
+    });
+  });
+
+  /* ---- phone menu ---- */
+  var menu = $('#menu');
+  $('[data-menu-open]').addEventListener('click', function () { openDialog(menu); });
+  menu.addEventListener('click', function (e) { if (e.target.closest('[data-close]')) closeDialog(menu); });
+
+  /* ---- header border once scrolled ---- */
+  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  /* ---- highlight the current section in the nav ---- */
+  if ('IntersectionObserver' in window) {
+    var links = $$('.site-nav a[href^="#"]'), byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var id = en.target.id === 'event' ? 'missions' : en.target.id;
+        links.forEach(function (a) { a.removeAttribute('aria-current'); }); // also clears the old one in sections that have no menu item
+        if (byId[id]) byId[id].setAttribute('aria-current', 'true');
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    $$('main section[id]').forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---- countdown to kickoff (absolute time, correct in every time zone) ---- */
+  var cd = $('[data-countdown]');
+  if (cd) {
+    var start = Date.parse(CONFIG.eventStart), end = Date.parse(CONFIG.eventEnd);
+    var out = { d: $('[data-cd="d"]', cd), h: $('[data-cd="h"]', cd), m: $('[data-cd="m"]', cd), s: $('[data-cd="s"]', cd) };
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    var tick = function () {
+      var now = Date.now();
+      if (now >= end) { cd.innerHTML = '<span class="countdown-label">That’s a wrap. See you next year!</span>'; return false; }
+      if (now >= start) { cd.innerHTML = '<span class="countdown-label">We’re live right now!</span>'; return false; }
+      var t = Math.floor((start - now) / 1000);
+      var d = Math.floor(t / 86400); t -= d * 86400;
+      var h = Math.floor(t / 3600); t -= h * 3600;
+      var m = Math.floor(t / 60), s = t - m * 60;
+      var put = function (el, v) { v = String(v); if (el.textContent !== v) { el.textContent = v; el.classList.remove('flip'); void el.offsetWidth; el.classList.add('flip'); } };
+      put(out.d, d); put(out.h, pad(h)); put(out.m, pad(m)); put(out.s, pad(s));
+      return true;
+    };
+    if (tick()) { var timer = setInterval(function () { if (!tick()) clearInterval(timer); }, 1000); }
+  }
+
+  /* ---- keycap press (visual only) ---- */
+  function press(el) {
+    if (!el) return;
+    el.classList.add('is-down');
+    setTimeout(function () { el.classList.remove('is-down'); }, 150);
+  }
+
+  /* opens the hacker application; works again even when the address already ends in #apply-hacker */
+  function goApply() {
+    selectForm('hacker');
+    if (location.hash === '#apply-hacker') document.getElementById('apply-hacker').scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+    else location.hash = 'apply-hacker';
+  }
+
+  /* ---- the deck: types a command and presses the matching keys ---- */
+  var deck = $('[data-deck]'), hero = $('[data-hero]');
+  var caps = {};
+  if (deck) {
+    $$('[data-k]', deck).forEach(function (c) { caps[c.getAttribute('data-k')] = c; });
+    var typeEl = $('[data-type]', deck), outEl = $('[data-out]', deck);
+    var CMD = 'hack ai --la --jan-30-31';
+    var keyFor = ['h', 'a', 'c', 'k', 'space', 'a2', 'i']; // which cap each of the first characters presses
+    var running = false;
+    var run = function () {
+      if (running || reduceMotion) return;
+      running = true;
+      typeEl.textContent = ''; outEl.hidden = true;
+      var i = 0;
+      (function step() {
+        if (i < CMD.length) {
+          var ch = CMD.charAt(i);
+          typeEl.textContent += ch;
+          if (keyFor[i]) press(caps[keyFor[i]]); else if (ch === ' ') press(caps.space);
+          i++;
+          setTimeout(step, ch === ' ' ? 150 : 70 + Math.random() * 70);
+        } else {
+          setTimeout(function () { press(caps.enter); outEl.hidden = false; running = false; }, 380);
+        }
+      })();
+    };
+    /* press on touch/mouse down, but act on click: a finger that starts scrolling must not trigger ENTER */
+    deck.addEventListener('pointerdown', function (e) { press(e.target.closest('[data-k]')); });
+    deck.addEventListener('click', function (e) { if (e.target.closest('[data-k="enter"]')) goApply(); });
+    deck.addEventListener('pointerenter', run);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (en) {
+        var on = en[0].isIntersecting;
+        hero.classList.toggle('is-paused', !on);
+        deck.classList.toggle('is-paused', !on);
+        if (on) run();
+      }, { threshold: .4 }).observe(deck);
+    } else run();
+  }
+  /* type on your own keyboard: the keys on screen press too; Enter (with nothing focused) goes to the form */
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey || !deck) return;
+    var t = e.target;
+    if (t && t.closest && t.closest('input, textarea, select, [contenteditable], dialog[open]')) return;
+    var k = e.key === ' ' ? 'space' : (e.key === 'Enter' ? 'enter' : String(e.key || '').toLowerCase());
+    if (caps[k]) press(caps[k]);
+    if (k === 'a') press(caps.a2);
+    // Enter jumps to the application only while the keyboard in the hero is on screen
+    if (k === 'enter' && (t === document.body || t === document.documentElement) && !deck.classList.contains('is-paused')) goApply();
+  });
+  /* iOS only shows :active when some touch listener exists */
+  document.addEventListener('touchstart', function () {}, { passive: true });
+
+  /* ---- characters: animations that are off screen are paused (saves battery) ---- */
+  if ('IntersectionObserver' in window) {
+    var animIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { en.target.classList.toggle('is-paused', !en.isIntersecting); });
+    }, { rootMargin: '160px 0px' }); // Bit stands ~160px above its stage, so it must start moving a little early
+    $$('[data-anim]').forEach(function (el) { animIO.observe(el); });
+  }
+
+  /* ---- Bit the robot: a copy stands above the footer, talks, jumps when poked, eyes follow the pointer ---- */
+  var heroBit = $('[data-bit]'), footerBit = $('[data-footer-bit]');
+  if (heroBit && footerBit) footerBit.innerHTML = heroBit.outerHTML + '<div class="bit-say" aria-hidden="true">See you Jan 30!</div>';
+  var bits = $$('[data-bit]'), say = $('[data-say]'), stage = $('[data-stage]');
+  var sayLines = ['Hi, hackers!', 'Press ENTER to apply', 'Free 1:1 AI mentoring', 'Pick a mission: F1–F5', 'Beep boop!'], sayI = 0;
+  var pokeLines = ['Beep! That tickles.', 'Hi! Ready to build?', 'Boop!', 'Press ENTER, human.'], pokeI = 0;
+  function sayNow(text) {
+    if (!say) return;
+    lastSay = Date.now();
+    say.textContent = text; say.classList.remove('say-pop'); void say.offsetWidth; say.classList.add('say-pop');
+  }
+  var lastSay = 0;
+  /* restarts a one-shot animation class even when it is clicked again before the last one ended */
+  function replay(el, cls) {
+    clearTimeout(el._pt); el.classList.remove(cls); void el.getBoundingClientRect(); el.classList.add(cls);
+    el._pt = setTimeout(function () { el.classList.remove(cls); }, 520);
+  }
+  if (say && stage && !reduceMotion) setInterval(function () {
+    // quiet while the hero is off screen, the tab is hidden, or the visitor has just poked Bit
+    if (stage.classList.contains('is-paused') || document.hidden || Date.now() - lastSay < 3000) return;
+    sayI = (sayI + 1) % sayLines.length; sayNow(sayLines[sayI]);
+  }, 3800);
+  bits.forEach(function (b) {
+    b.addEventListener('click', function () {
+      replay(b, 'is-poked');
+      if (b === heroBit) sayNow(pokeLines[pokeI++ % pokeLines.length]);
+    });
+  });
+  if (bits.length && !reduceMotion && window.matchMedia && matchMedia('(pointer: fine)').matches) {
+    var px = 0, py = 0, lookRaf = 0;
+    var lookAround = function () {
+      lookRaf = 0;
+      bits.forEach(function (b) {
+        var r = b.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > window.innerHeight) return;
+        var dx = px - (r.left + r.width / 2), dy = py - (r.top + r.height * 0.34);
+        var dist = Math.sqrt(dx * dx + dy * dy) || 1, k = Math.min(1, dist / 240);
+        var g = b.querySelector('.bit-look');
+        g.style.setProperty('--lx', (dx / dist * 5 * k).toFixed(1) + 'px');
+        g.style.setProperty('--ly', (dy / dist * 4 * k).toFixed(1) + 'px');
+      });
+    };
+    document.addEventListener('pointermove', function (e) {
+      if (e.pointerType === 'touch') return; // a finger on a hybrid laptop should not move the eyes
+      px = e.clientX; py = e.clientY; if (!lookRaf) lookRaf = requestAnimationFrame(lookAround);
+    }, { passive: true });
+    // pointer left the window: eyes look straight ahead; page scrolled under a still pointer: eyes follow
+    document.documentElement.addEventListener('mouseleave', function () { px = window.innerWidth / 2; py = window.innerHeight / 2; if (!lookRaf) lookRaf = requestAnimationFrame(lookAround); });
+    window.addEventListener('scroll', function () { if (!lookRaf) lookRaf = requestAnimationFrame(lookAround); }, { passive: true });
+  }
+  /* keycap crew: a tap or click makes a character jump */
+  $$('.crew .cm').forEach(function (c) {
+    c.addEventListener('click', function () { replay(c, 'cm-poke'); });
+  });
+  var owl = $('[data-owl]'); // the FAQ owl hops when poked
+  if (owl) owl.addEventListener('click', function () { replay(owl, 'is-poked'); });
+
+  /* ---- blocks below the fold drop into place once (they stay visible the whole time) ---- */
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var drops = $$('[data-drop]').filter(function (el) { return el.getBoundingClientRect().top > window.innerHeight; });
+    drops.forEach(function (el) { el.classList.add('drop-ready'); });
+    var dio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('dropped'); dio.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px' });
+    drops.forEach(function (el) { dio.observe(el); });
+  }
+
+  /* ---- ticker pauses off screen ---- */
+  var ticker = $('[data-ticker]');
+  if (ticker && 'IntersectionObserver' in window) new IntersectionObserver(function (en) { ticker.classList.toggle('is-paused', !en[0].isIntersecting); }).observe(ticker);
+
+  /* ---- missions: press a key to pick it; it is added to the application ---- */
+  var missionSelect = $('#h-mission'), missionLive = $('[data-mission-live]');
+  var missionKeys = $$('[data-mission]');
+  /* a short, stable name (the title), with the description read after it */
+  missionKeys.forEach(function (b, i) {
+    var t = $('.mkey-title', b), d = $('.mkey-text', b);
+    t.id = 'mk-t' + i; d.id = 'mk-d' + i;
+    b.setAttribute('aria-labelledby', t.id); b.setAttribute('aria-describedby', d.id);
+  });
+  function syncMission(value) { missionKeys.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-mission') === value)); }); }
+  missionKeys.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var on = b.getAttribute('aria-pressed') !== 'true', value = on ? b.getAttribute('data-mission') : '';
+      syncMission(value);
+      if (missionSelect) missionSelect.value = value;
+      missionLive.textContent = on ? 'Mission picked: ' + value + '. We added it to your application.' : 'Mission cleared.';
+    });
+  });
+  if (missionSelect) missionSelect.addEventListener('change', function () { syncMission(missionSelect.value); });
+
+  /* ---- the two forms: hacker application and contact ---- */
+  var tabs = $$('[role="tab"][data-tab]');
+  function selectForm(name, focus) {
+    var tab = tabs.filter(function (t) { return t.getAttribute('data-tab') === name; })[0] || tabs[0];
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { selectForm(t.getAttribute('data-tab')); });
+    t.addEventListener('keydown', function (e) {
+      var j = null;
+      if (e.key === 'ArrowRight') j = (i + 1) % tabs.length;
+      else if (e.key === 'ArrowLeft') j = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === 'Home') j = 0;
+      else if (e.key === 'End') j = tabs.length - 1;
+      if (j !== null) { e.preventDefault(); selectForm(tabs[j].getAttribute('data-tab'), true); }
+    });
+  });
+  selectForm('hacker');
+
+  var hints = {
+    partner: 'What would you like to bring: a mission challenge, a workshop, mentors, credits?',
+    speaker: 'Your topic and experience, and whether you want to speak, mentor or judge.',
+    media: 'Your outlet and what you plan to cover.',
+    question: 'Your question.'
+  };
+  var msg = $('#c-msg');
+  function updateHint() { var r = $('input[name="contact_type"]:checked'); msg.placeholder = r ? hints[r.value] : 'Tell us what you have in mind.'; }
+  function setContactType(type) { var r = $('input[name="contact_type"][value="' + type + '"]'); if (r) { r.checked = true; updateHint(); } }
+  $$('input[name="contact_type"]').forEach(function (r) { r.addEventListener('change', updateHint); });
+
+  /* links with data-form pick the form (and the contact type); the browser itself scrolls to the anchor */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('[data-form]');
+    if (!a) return;
+    selectForm(a.getAttribute('data-form'));
+    if (a.getAttribute('data-type')) setContactType(a.getAttribute('data-type'));
+  });
+  function fromHash() {
+    var m = location.hash.match(/^#apply-(hacker|contact|partner|speaker|media)$/);
+    if (!m) return;
+    if (m[1] === 'hacker') selectForm('hacker');
+    else { selectForm('contact'); if (m[1] !== 'contact') setContactType(m[1]); }
+  }
+  window.addEventListener('hashchange', fromHash);
+  fromHash();
+
+  /* ---- validation: chip groups get a visible message (native bubbles misbehave on hidden inputs) ---- */
+  function scrollToEl(el, gap) {
+    var y = el.getBoundingClientRect().top + window.pageYOffset - header.offsetHeight - (gap || 0);
+    window.scrollTo({ top: Math.max(0, y), behavior: reduceMotion ? 'auto' : 'smooth' });
+  }
+  function setGroupError(fs, text) {
+    var el = $('.group-error', fs);
+    if (!text) { if (el) el.parentNode.removeChild(el); fs.classList.remove('has-error'); return; }
+    if (!el) { el = document.createElement('p'); el.className = 'group-error'; el.setAttribute('role', 'alert'); fs.appendChild(el); }
+    el.textContent = text; fs.classList.add('has-error');
+  }
+  function checkGroups(form) {
+    var bad = [];
+    $$('fieldset', form).forEach(function (fs) {
+      var radios = $$('input[type="radio"]', fs), boxes = $$('input[type="checkbox"]', fs);
+      var need = fs.hasAttribute('data-require-one') || radios.some(function (r) { return r.required; });
+      if (!need) return;
+      var any = radios.concat(boxes).some(function (x) { return x.checked; });
+      var lg = $('legend', fs), nameOf = lg && lg.firstChild && lg.firstChild.nodeType === 3 ? lg.firstChild.textContent.trim() : '';
+      setGroupError(fs, any ? '' : (radios.length ? 'Please choose one option' : 'Please choose at least one option') + (nameOf ? ' for “' + nameOf + '”.' : '.'));
+      if (!any) bad.push(fs);
+    });
+    return bad;
+  }
+
+  /* ---- success pop-up ---- */
+  var successText = {
+    hacker: ["You're in the queue!", 'We review applications on a rolling basis and will email you a decision. Keep an eye on your inbox and spam folder.'],
+    partner: ["Let's build this together!", 'Our partnerships team will reply by email with formats and next steps.'],
+    speaker: ['Thanks for stepping up!', "We'll match you with a speaking, mentoring or judging slot and reply by email."],
+    media: ['See you on the floor!', "We'll confirm your media pass by email before the event."],
+    question: ['Got it!', "We'll answer by email soon."]
+  };
+  var success = $('#dlg-success');
+  var pageUrl = location.href.split(/[?#]/)[0]; // also right when the file is opened from disk
+  var eventUrl = CONFIG.eventUrl || pageUrl;
+  var gTitle = 'Su&IT AI Hackathon 2027';
+  var gDetails = 'Applied AI & Robotics hackathon. Sat 9am-9pm and Sun 9am-6pm PT. ' + eventUrl;
+  var gPlace = 'Los Angeles area (venue to be announced)'; // TODO(launch): the venue address, here and in the .ics file
+  var days = [['Day 1', '20270130T170000Z', '20270131T050000Z'], ['Day 2', '20270131T170000Z', '20270201T020000Z']];
+  $$('[data-gcal]', success).forEach(function (a) {
+    var d = days[Number(a.getAttribute('data-gcal')) - 1];
+    a.href = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(gTitle + ' (' + d[0] + ')')
+      + '&dates=' + d[1] + '/' + d[2] + '&details=' + encodeURIComponent(gDetails) + '&location=' + encodeURIComponent(gPlace);
+  });
+  /* "Bring a friend": the link is always visible and selectable, so it can be copied even when the
+     browser blocks the clipboard. The system share sheet is offered on phones and tablets only. */
+  var shareStatus = $('[data-share-status]'), shareUrlEl = $('[data-share-url]'), shareBlock = $('[data-share-block]');
+  var onLocalPage = location.protocol === 'file:' || /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  if (!CONFIG.eventUrl && onLocalPage) shareBlock.hidden = true; // an address that works only on this computer is useless to a friend
+  shareUrlEl.value = eventUrl;
+  shareUrlEl.addEventListener('focus', function () { shareUrlEl.select(); });
+  var canShare = !!navigator.share && !!window.matchMedia && matchMedia('(pointer: coarse)').matches;
+  $('[data-share]').hidden = !canShare;
+  function copyLink() {
+    var manual = function () { shareUrlEl.focus(); shareUrlEl.select(); shareStatus.textContent = 'Copy the link above (Ctrl+C, or long-press).'; };
+    var legacy = function () {
+      try { shareUrlEl.select(); shareUrlEl.setSelectionRange(0, 2000); if (document.execCommand('copy')) { shareStatus.textContent = 'Link copied!'; return; } } catch (err) {}
+      manual();
+    };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(eventUrl).then(function () { shareStatus.textContent = 'Link copied!'; }, legacy);
+    else legacy();
+  }
+  $('[data-copy]').addEventListener('click', copyLink);
+  $('[data-share]').addEventListener('click', function () {
+    navigator.share({ title: gTitle, text: 'Join me at ' + gTitle + ' (Jan 30-31, 2027)', url: eventUrl })
+      .catch(function (err) { if (!err || err.name !== 'AbortError') copyLink(); });
+  });
+  /* confetti: coloured paper pieces fall from the top; skipped for people who asked for less motion */
+  function confetti(box) {
+    if (!box || reduceMotion) return;
+    var cols = ['#FFD23F', '#4FD8F3', '#2457FF', '#FF8FA8', '#ffffff'], html = '';
+    for (var i = 0; i < 44; i++) {
+      html += '<i style="left:' + (Math.random() * 100).toFixed(1) + '%;width:' + (6 + Math.random() * 6).toFixed(0) + 'px;height:' + (9 + Math.random() * 8).toFixed(0) + 'px;background:' + cols[i % cols.length]
+        + ';--dx:' + (Math.random() * 180 - 90).toFixed(0) + 'px;--r:' + (Math.random() * 720 - 360).toFixed(0) + 'deg;animation-delay:' + (Math.random() * 0.5).toFixed(2) + 's;animation-duration:' + (1.8 + Math.random() * 1.4).toFixed(2) + 's"></i>';
+    }
+    box.innerHTML = html;
+    clearTimeout(box._ct); box._ct = setTimeout(function () { box.innerHTML = ''; }, 3800);
+  }
+  function showSuccess(kind, demo) {
+    var t = successText[kind] || successText.question;
+    $('[data-success-title]').textContent = t[0];
+    $('[data-success-text]').textContent = t[1];
+    $('[data-success-demo]').hidden = !demo;
+    $('[data-success-hacker]').hidden = kind !== 'hacker';
+    shareStatus.textContent = '';
+    openDialog(success);
+    confetti($('[data-confetti]'));
+  }
+
+  /* ---- submit ---- */
+  $$('form.form').forEach(function (form) {
+    form.setAttribute('novalidate', ''); // JS validates; without JS the browser's own validation still applies
+    form.addEventListener('input', function (e) { if (e.target.setCustomValidity) e.target.setCustomValidity(''); });
+    form.addEventListener('change', function (e) { var fs = e.target.closest('fieldset'); if (fs && fs.classList.contains('has-error')) checkGroups(form); });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = $('.form-status', form), btn = $('button[type="submit"]', form);
+      if (form.elements.hpx && form.elements.hpx.value) return; // a bot filled the hidden field
+      // a required text field filled with only spaces counts as empty
+      $$('input[required]:not([type="checkbox"]):not([type="radio"]), textarea[required]', form).forEach(function (el) {
+        el.setCustomValidity(el.value.trim() ? '' : 'Please fill in this field.');
+      });
+      var problems = checkGroups(form);
+      var badField = $$('input, select, textarea', form).filter(function (el) { return !el.closest('.picks') && el.willValidate && !el.checkValidity(); })[0];
+      if (badField) problems.push(badField);
+      if (problems.length) {
+        problems.sort(function (a, b) { return (a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING) ? -1 : 1; });
+        var first = problems[0];
+        if (first.tagName === 'FIELDSET') { scrollToEl(first, 16); var inp = $('input', first); if (inp) inp.focus({ preventScroll: true }); }
+        else first.reportValidity();
+        return;
+      }
+      var role = form.getAttribute('data-role');
+      var kind = role === 'hacker' ? 'hacker' : (($('input[name="contact_type"]:checked', form) || {}).value || 'question');
+      var fd = new FormData(form), payload = new URLSearchParams(), seen = {};
+      payload.set('role', role);
+      payload.set('submitted_at', new Date().toISOString());
+      payload.set('page', pageUrl);
+      fd.forEach(function (v, k) {
+        if (k === 'hpx' || seen[k]) return;
+        seen[k] = true;
+        payload.set(k, fd.getAll(k).map(String).join(', ').trim().slice(0, 2000));
+      });
+      if (!CONFIG.formEndpoint) { console.warn('Demo mode: formEndpoint is empty, nothing was sent.'); showSuccess(kind, true); return; }
+      var label = btn.innerHTML;
+      btn.disabled = true; $('.key__face', btn).textContent = 'Sending…'; status.textContent = '';
+      fetch(CONFIG.formEndpoint, { method: 'POST', body: payload })
+        .then(function (res) { return res.json().catch(function () { return {}; }).then(function (j) { if (!res.ok || j.ok !== true) throw new Error(j.error || ('HTTP ' + res.status)); }); })
+        .then(function () {
+          form.reset();
+          syncMission(missionSelect ? missionSelect.value : ''); missionLive.textContent = ''; updateHint(); // the other form may still hold a mission
+          btn.disabled = false; btn.innerHTML = label;
+          btn.focus({ preventScroll: true }); // so focus returns here, not to the page body, when the pop-up closes
+          showSuccess(kind, false);
+        })
+        .catch(function (err) {
+          console.error('Form error:', err);
+          status.textContent = 'Sorry, that didn’t go through. Please try again or email ' + CONFIG.contactEmail + '.';
+          btn.disabled = false; btn.innerHTML = label;
+        });
+    });
+  });
+
+  /* ---- cookie notice: shown until the visitor chooses ---- */
+  var COOKIE_KEY = 'suit-hack-cookie-choice', cookie = $('[data-cookie]');
+  var getChoice = function () { try { return localStorage.getItem(COOKIE_KEY); } catch (err) { return null; } };
+  if (!getChoice()) cookie.hidden = false;
+  $$('[data-cookie-choice]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      try { localStorage.setItem(COOKIE_KEY, b.getAttribute('data-cookie-choice')); } catch (err) {}
+      cookie.hidden = true;
+      // TODO(launch): start analytics here only when the choice is "accepted"
+    });
+  });
+  $('[data-cookie-settings]').addEventListener('click', function () { cookie.hidden = false; $('[data-cookie-choice]', cookie).focus(); });
+
+  /* ---- placeholder social links do nothing until real URLs are added ---- */
+  $$('[data-social]').forEach(function (a) { if (a.getAttribute('href') === '#') a.addEventListener('click', function (e) { e.preventDefault(); }); });
+  $$('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+
+  /* ---- draft review mode: ?draft lists every fact still to confirm ---- */
+  if (CONFIG.draftMode || /[?&]draft\b/.test(location.search)) {
+    var items = $$('[data-todo]');
+    var extra = [
+      'Page head: JSON-LD (venue, price), canonical, og:url and og:image still point to placeholders',
+      'Success pop-up and .ics file: add the venue address to the calendar invites',
+      'Before launch: strip every data-todo attribute (see README) - they are visible in the page source'
+    ];
+    var noindex = !!document.querySelector('meta[name="robots"][content*="noindex"]');
+    document.documentElement.classList.add('draft-on');
+    var panel = document.createElement('aside');
+    panel.className = 'todo-panel';
+    /* starts collapsed on phones so it does not cover the first screen */
+    panel.innerHTML = '<details' + (window.innerWidth >= 1100 ? ' open' : '') + '><summary>Draft review: ' + (items.length + extra.length) + ' items to confirm' + (noindex ? ' (noindex is ON)' : '') + '</summary>'
+      + (CONFIG.formEndpoint ? '' : '<p class="todo-note">Forms are in demo mode: nothing is sent.</p>') + '<ol></ol></details>';
+    var list = $('ol', panel), det = $('details', panel);
+    var syncOutlines = function () { document.documentElement.classList.toggle('show-todos', det.open); };
+    det.addEventListener('toggle', syncOutlines); syncOutlines();
+    extra.forEach(function (text) { var li = document.createElement('li'); li.textContent = text; list.appendChild(li); });
+    items.forEach(function (el) {
+      var li = document.createElement('li'), b = document.createElement('button');
+      b.type = 'button'; b.textContent = el.getAttribute('data-todo');
+      b.addEventListener('click', function () {
+        var dlg = el.closest('dialog');
+        if (dlg) { openDialog(dlg); return; }
+        if (el.hasAttribute('data-cookie')) { el.hidden = false; return; }
+        var p = el.closest('[role="tabpanel"]');
+        if (p && p.hidden) selectForm(p.id.replace('panel-', ''));
+        el.scrollIntoView({ block: 'center' });
+      });
+      li.appendChild(b); list.appendChild(li);
+    });
+    document.body.appendChild(panel);
+  }
+})();
+</script>
+</body>
+</html>
