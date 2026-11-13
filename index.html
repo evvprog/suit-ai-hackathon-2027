@@ -438,6 +438,9 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
 .has-buddy .section-head{padding-right:clamp(104px,15vw,170px)}
 .buddy{position:absolute;right:0;top:-6px;width:clamp(84px,12vw,132px);pointer-events:none}
 .buddy svg{display:block;width:100%;height:auto;overflow:visible}
+#faq .section-head{max-width:none;padding-inline:clamp(104px,15vw,170px);text-align:center}
+#faq .kicker{justify-content:center}
+@media (max-width:700px){#faq .section-head{padding-inline:0}#faq .buddy--q{position:static;width:96px;margin:0 auto 10px}}
 .buddy--q{width:clamp(92px,12vw,140px);right:clamp(0px,1vw,16px);top:-14px;pointer-events:auto;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
 .owl-bob{transform-origin:60px 126px;animation:owl 4s ease-in-out infinite}
 @keyframes owl{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-5px)}}
