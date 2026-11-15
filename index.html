@@ -281,6 +281,7 @@ dialog{color:var(--ink)}
 .about-grid > *{min-width:0}
 @media (min-width:900px){.about-grid{grid-template-columns:auto minmax(0,1fr)}}
 .about-copy p{max-width:62ch}
+.about-copy .chips + p{margin-top:14px}
 .explain{display:grid;gap:12px;margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));max-width:62ch}
 .explain-card{padding:14px 16px;border:1.5px solid var(--ink);border-radius:16px;background:var(--card)}
 .explain-card h3{margin:0 0 4px;font-size:1rem}
@@ -356,7 +357,12 @@ input:user-invalid,select:user-invalid,textarea:user-invalid{border-color:#C8102
 @media (min-width:880px){.footer-grid{grid-template-columns:1.3fr 1fr .8fr}}
 .footer-grid p{margin-top:10px;color:var(--slate)}
 .footer-h{margin-bottom:14px}
-.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.socials .key--icon{padding-inline:4px}.socials .key--icon .key__face{min-width:40px}
+.menu-foot .socials{gap:5px}.menu-foot .socials .key--icon .key__face{min-width:32px;padding:5px}
+/* six icons: when one row does not fit, wrap them as a tidy 3 + 3 instead of 5 + 1 */
+@media (max-width:389px){.socials{display:grid;grid-template-columns:repeat(3,max-content)}}
+@media (min-width:870px) and (max-width:1199px){.site-footer .socials{display:grid;grid-template-columns:repeat(3,max-content)}}
 .footer-links{display:grid;gap:10px;font-weight:700}
 .footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:36px;padding-top:18px;border-top:2px dashed var(--line);color:var(--slate);font-size:.92rem}
 
@@ -520,7 +526,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
 @media (forced-colors:active){.key[aria-pressed="true"],.key[aria-selected="true"],.pick input:checked + .key__face{outline:3px solid Highlight;outline-offset:2px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-<!-- Structured data for search engines (schema.org Event). TODO(confirm): venue, price, Krokit website URL before launch. -->
+<!-- Structured data for search engines (schema.org Event). TODO(confirm): venue and price before launch. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -540,7 +546,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     "name": "Venue to be announced, Los Angeles, California, USA",
     "address": {"@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US"}
   },
-  "organizer": {"@type": "Organization", "name": "Krokit"},
+  "organizer": {"@type": "Organization", "name": "Krokit", "url": "https://krokit.org/", "email": "startupkraken@gmail.com", "sameAs": ["https://www.instagram.com/krokit_accelerator/", "https://www.facebook.com/startup.accelerator.minsk.belarus/", "https://www.linkedin.com/company/38166776/", "https://t.me/krokit_org"]},
   "contributor": {"@type": "Organization", "name": "Su&IT", "url": "https://suit.by/"},
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://evvprog.github.io/suit-ai-hackathon-2027/#apply"},
   "image": "https://evvprog.github.io/suit-ai-hackathon-2027/og-image.png"
@@ -596,11 +602,12 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
   <div class="menu-foot">
     <span class="logo-keys" aria-hidden="true"><span>K</span><span>R</span><span>O</span><span>K</span><span>I</span><span>T</span></span>
     <ul class="socials" aria-label="Krokit on social media">
-      <li><a class="key key--sm key--icon" href="mailto:info@suit.by" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
-      <li><a class="key key--sm key--icon" href="#" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
-      <li><a class="key key--sm key--icon" href="#" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
-      <li><a class="key key--sm key--icon" href="#" data-social aria-label="WhatsApp"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.8-1.3-2.3-2.3l1-1-1-2z"/></svg></span></a></li>
-      <li><a class="key key--sm key--icon" href="#" data-social aria-label="LinkedIn"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="mailto:startupkraken@gmail.com" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="https://www.instagram.com/krokit_accelerator/" target="_blank" rel="noopener" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="https://www.facebook.com/startup.accelerator.minsk.belarus/" target="_blank" rel="noopener" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="https://wa.me/375336667466" target="_blank" rel="noopener" data-social aria-label="WhatsApp"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.8-1.3-2.3-2.3l1-1-1-2z"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="https://www.linkedin.com/company/38166776/" target="_blank" rel="noopener" data-social aria-label="LinkedIn"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="https://t.me/krokit_org" target="_blank" rel="noopener" data-social aria-label="Telegram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4L3 11l6 2.2"/><path d="M21 4l-3 16-6.5-5"/><path d="M9 13.2V19l2.8-3.6"/><path d="M21 4L9 13.2"/></svg></span></a></li>
     </ul>
   </div>
 </dialog>
@@ -711,9 +718,10 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     <div class="about-copy">
       <span class="kicker">About us</span>
       <h2 id="about-title">Who we are</h2>
-      <p class="lead">Krokit brings builders together to make AI and robotics that actually work. This hackathon connects curious people with mentors, partners and real problems.</p>
-      <p>Su&amp;IT, an international startup competition and business forum, supports us as a partner.</p>
-      <ul class="chips"><li class="chip">Hackathon</li><li class="chip">Free mentoring</li><li class="chip">Startup network</li></ul>
+      <p class="lead">Krokit is a startup accelerator for IT startups, online businesses, hardware projects and founders. Teams get a personal mentor, lessons from experienced entrepreneurs and a Demo Day in front of investors.</p>
+      <p>Now we're bringing that to Los Angeles, together with our partner Su&amp;IT, an international startup competition and business forum.</p>
+      <ul class="chips"><li class="chip">Startup accelerator</li><li class="chip">Personal mentors</li><li class="chip">Demo Day</li></ul>
+      <p><a href="https://krokit.org/en/" target="_blank" rel="noopener">Visit krokit.org</a></p>
       <div class="explain">
         <div class="explain-card" data-drop><h3>What is a hackathon?</h3><p>A short sprint where small teams turn an idea into a working prototype in one weekend and show it to a jury.</p></div>
         <div class="explain-card" data-drop style="--i:1"><h3>Who are hackers?</h3><p>Curious builders who love making things and solving problems with code, hardware and creativity. No break-ins, just building.</p></div>
@@ -1003,7 +1011,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
         </ul>
         <div class="cta-row">
           <a class="key key--blue" href="#apply-partner" data-form="contact" data-type="partner"><span class="key__face">Become a partner <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-          <span class="email-text">info@suit.by</span>
+          <span class="email-text">startupkraken@gmail.com</span>
         </div>
       </div>
     </div>
@@ -1063,7 +1071,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
       <h2 id="apply-title">Ready? Press Enter.</h2>
       <p class="lead">Hackers apply in two minutes. Partners, speakers, media and anyone with a question use the contact form.</p>
     </header>
-    <noscript><p class="form-card" style="padding:20px;margin-bottom:20px">These forms need JavaScript. Please turn it on, or email us at info@suit.by.</p></noscript>
+    <noscript><p class="form-card" style="padding:20px;margin-bottom:20px">These forms need JavaScript. Please turn it on, or email us at startupkraken@gmail.com.</p></noscript>
     <div class="form-card">
       <div class="form-tabs" role="tablist" aria-label="Choose a form">
         <button class="key key--lg" type="button" role="tab" id="tab-hacker" aria-controls="panel-hacker" aria-selected="true" data-tab="hacker"><span class="key__face">I want to hack <span aria-hidden="true">↵</span></span></button>
@@ -1150,13 +1158,14 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     </div>
     <div>
       <h2 class="footer-h">Contact</h2>
-      <span class="email-text">info@suit.by</span>
+      <span class="email-text">startupkraken@gmail.com</span>
       <ul class="socials" aria-label="Krokit contacts and social media">
-        <li><a class="key key--sm key--icon" href="mailto:info@suit.by" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
-        <li><a class="key key--sm key--icon" href="#" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
-        <li><a class="key key--sm key--icon" href="#" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
-        <li><a class="key key--sm key--icon" href="#" data-social aria-label="WhatsApp"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.8-1.3-2.3-2.3l1-1-1-2z"/></svg></span></a></li>
-        <li><a class="key key--sm key--icon" href="#" data-social aria-label="LinkedIn"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="mailto:startupkraken@gmail.com" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="https://www.instagram.com/krokit_accelerator/" target="_blank" rel="noopener" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="https://www.facebook.com/startup.accelerator.minsk.belarus/" target="_blank" rel="noopener" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="https://wa.me/375336667466" target="_blank" rel="noopener" data-social aria-label="WhatsApp"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8.5 8.5 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1c-1-.5-1.8-1.3-2.3-2.3l1-1-1-2z"/></svg></span></a></li>
+        <li><a class="key key--sm key--icon" href="https://www.linkedin.com/company/38166776/" target="_blank" rel="noopener" data-social aria-label="LinkedIn"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5c0-1.5 1-2.5 2.5-2.5S17 12 17 13.5V17"/></svg></span></a></li>
+      <li><a class="key key--sm key--icon" href="https://t.me/krokit_org" target="_blank" rel="noopener" data-social aria-label="Telegram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4L3 11l6 2.2"/><path d="M21 4l-3 16-6.5-5"/><path d="M9 13.2V19l2.8-3.6"/><path d="M21 4L9 13.2"/></svg></span></a></li>
       </ul>
     </div>
     <div>
@@ -1197,7 +1206,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
       <li>Build honestly: no plagiarism. Credit the open-source code, APIs and AI tools you use.</li>
       <li>Respect privacy: don't photograph, record or share others without their consent.</li>
     </ul>
-    <p>If something happens, talk to any organizer on site or email info@suit.by. We will act quickly and confidentially. Organizers may warn, disqualify or remove anyone who breaks these rules.</p>
+    <p>If something happens, talk to any organizer on site or email startupkraken@gmail.com. We will act quickly and confidentially. Organizers may warn, disqualify or remove anyone who breaks these rules.</p>
   </div>
 </dialog>
 <dialog class="dialog" id="dlg-privacy" aria-labelledby="privacy-title">
@@ -1208,7 +1217,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     <ul>
       <li>Your data is stored in the organizers' Google Workspace and is accessible only to the organizing team.</li>
       <li>We never sell your data. We share hacker applications with hiring partners only if you tick the opt-in box.</li>
-      <li>We delete application data within 12 months after the event, or sooner on request: email info@suit.by.</li>
+      <li>We delete application data within 12 months after the event, or sooner on request: email startupkraken@gmail.com.</li>
       <li>Photos and video may be taken at the event. Tell the registration desk if you'd rather not be photographed.</li>
       <li>Cookies: this page remembers your cookie choice in your browser. Visits are counted only if you accept.</li>
     </ul>
@@ -1252,7 +1261,7 @@ window.HACK_CONFIG = Object.assign({
   eventStart: '2027-01-30T09:00:00-08:00',
   eventEnd: '2027-01-31T18:00:00-08:00',
   eventUrl: 'https://evvprog.github.io/suit-ai-hackathon-2027/', // TODO(launch): e.g. 'https://evvprog.github.io/suit-ai-hackathon-2027/' (used by the share button); empty = this page
-  contactEmail: 'info@suit.by',
+  contactEmail: 'startupkraken@gmail.com',
   draftMode: false
 }, window.HACK_CONFIG || {});
 
