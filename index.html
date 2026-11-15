@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Su&amp;IT AI Hackathon 2027 · Applied AI &amp; Robotics · Los Angeles</title>
-<meta name="description" content="Two-day applied AI &amp; robotics hackathon for students and recent grads. Jan 30–31, 2027, LA area. Free AI mentoring, real missions, prizes that launch you.">
+<title>Krokit AI Hackathon 2027 · Applied AI &amp; Robotics · Los Angeles, CA</title>
+<meta name="description" content="Two-day applied AI &amp; robotics hackathon open to everyone who loves to build. Jan 30–31, 2027, Los Angeles, California, USA. Free AI mentoring, real missions, prizes that launch you.">
 <!-- DRAFT: remove the next line on launch day, otherwise search engines will not index the page -->
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#2457FF">
 <!-- TODO(confirm): final public URL of this page (canonical, og:url, og:image) -->
 <link rel="canonical" href="https://evvprog.github.io/suit-ai-hackathon-2027/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Su&amp;IT">
-<meta property="og:title" content="Su&amp;IT AI Hackathon 2027 — Applied AI &amp; Robotics in LA">
-<meta property="og:description" content="Two days. Five missions. Free AI mentoring. Jan 30–31, 2027 · Los Angeles area.">
+<meta property="og:site_name" content="Krokit">
+<meta property="og:title" content="Krokit AI Hackathon 2027 — Applied AI &amp; Robotics in Los Angeles">
+<meta property="og:description" content="Two days. Five missions. Free AI mentoring. Jan 30–31, 2027 · Los Angeles, California, USA.">
 <meta property="og:url" content="https://evvprog.github.io/suit-ai-hackathon-2027/">
 <meta property="og:image" content="https://evvprog.github.io/suit-ai-hackathon-2027/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -101,7 +101,7 @@ ul,ol{margin:0;padding:0;list-style:none}
 .logo-keys span{display:grid;place-items:center;width:24px;height:26px;border:1.5px solid var(--ink);border-radius:7px 7px 6px 6px;background:var(--key);box-shadow:0 3px 0 var(--ink);font:600 .78rem/1 var(--font-mono);transition:transform .12s ease,box-shadow .12s ease}
 .logo-keys span:nth-child(3){background:var(--signal)}
 .logo:hover .logo-keys span{transform:translateY(2px);box-shadow:0 1px 0 var(--ink)}
-.logo-keys span:nth-child(2){transition-delay:.03s}.logo-keys span:nth-child(3){transition-delay:.06s}.logo-keys span:nth-child(4){transition-delay:.09s}.logo-keys span:nth-child(5){transition-delay:.12s}
+.logo-keys span:nth-child(2){transition-delay:.03s}.logo-keys span:nth-child(3){transition-delay:.06s}.logo-keys span:nth-child(4){transition-delay:.09s}.logo-keys span:nth-child(5){transition-delay:.12s}.logo-keys span:nth-child(6){transition-delay:.15s}
 .logo-text{font:800 .92rem/1 var(--font-display);letter-spacing:-.01em}
 .site-nav{margin-left:auto}
 .site-nav ul{display:flex;gap:2px}
@@ -112,7 +112,8 @@ ul,ol{margin:0;padding:0;list-style:none}
 .menu-key{display:none}
 @media (max-width:1099px){.site-nav{display:none}.menu-key{display:inline-flex}.header-actions{margin-left:auto}}
 @media (max-width:499px){.logo-text{display:none}}
-@media (max-width:359px){.header-inner{gap:8px}.logo-keys span{width:18px}}
+@media (max-width:420px){.logo-keys{gap:2px}.logo-keys span{width:20px;height:24px;font-size:.72rem}}
+@media (max-width:359px){.header-inner{gap:8px}.logo-keys span{width:17px}}
 
 /* ---------- menu (phone): a panel of keycaps ---------- */
 dialog{color:var(--ink)}
@@ -136,8 +137,6 @@ dialog{color:var(--ink)}
 .hero-title .t1{display:block;color:var(--blue)}
 .hero-title .t2{display:block;margin-top:.32em;font-size:.45em;line-height:1.12;letter-spacing:-.02em}
 .year{display:inline-block;margin-left:.12em;padding:.02em .3em;border:1.5px solid var(--ink);border-radius:12px;background:var(--signal);box-shadow:0 5px 0 var(--ink);transform:rotate(-4deg)}
-.byline{margin-top:14px;max-width:44ch;color:var(--slate);font-size:.98rem;line-height:1.4}
-.byline strong{color:var(--ink)}
 .tagline{margin-top:14px;max-width:34ch;font-size:clamp(1.12rem,2vw,1.36rem);font-weight:600}
 .facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px}
 .facts li{display:inline-flex;align-items:center;gap:8px;font:600 .95rem/1.25 var(--font-mono)}
@@ -282,6 +281,16 @@ dialog{color:var(--ink)}
 .about-grid > *{min-width:0}
 @media (min-width:900px){.about-grid{grid-template-columns:auto minmax(0,1fr)}}
 .about-copy p{max-width:62ch}
+.explain{display:grid;gap:12px;margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));max-width:62ch}
+.explain-card{padding:14px 16px;border:1.5px solid var(--ink);border-radius:16px;background:var(--card)}
+.explain-card h3{margin:0 0 4px;font-size:1rem}
+.explain-card p{margin:0;color:var(--graphite);font-size:.95rem;line-height:1.5}
+.partner-cards{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));list-style:none;margin:0;padding:0}
+.pcard{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:20px;border:1.5px solid var(--ink);border-radius:18px;background:var(--card)}
+.pcard .logo-keys span{width:32px;height:36px;font-size:.95rem}
+.pcard-body h3{margin:0 0 4px}.pcard-body p{margin:0 0 12px;color:var(--graphite)}
+.pcard--empty{border-style:dashed;background:transparent;color:var(--slate)}
+
 .about-copy p + p{margin-top:12px;color:var(--slate)}
 
 /* ---------- faq: each question is a key that stays down while open ---------- */
@@ -511,25 +520,30 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
 @media (forced-colors:active){.key[aria-pressed="true"],.key[aria-selected="true"],.pick input:checked + .key__face{outline:3px solid Highlight;outline-offset:2px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
-<!-- Structured data for search engines. TODO(confirm): venue, price, URL before launch. -->
+<!-- Structured data for search engines (schema.org Event). TODO(confirm): venue, price, Krokit website URL before launch. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Event",
-  "name": "Su&IT AI Hackathon 2027",
-  "description": "A two-day applied AI and robotics hackathon for university students and recent graduates in the Los Angeles area.",
+  "name": "Krokit AI Hackathon 2027",
+  "url": "https://evvprog.github.io/suit-ai-hackathon-2027/",
+  "description": "A two-day applied AI and robotics hackathon in Los Angeles, California, USA, open to everyone who loves to build: students, graduates, self-taught developers, designers and engineers.",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "audience": {"@type": "Audience", "audienceType": "Anyone interested in AI and robotics"},
   "startDate": "2027-01-30T09:00:00-08:00",
   "endDate": "2027-01-31T18:00:00-08:00",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "location": {
     "@type": "Place",
-    "name": "Venue to be announced, Los Angeles area",
+    "name": "Venue to be announced, Los Angeles, California, USA",
     "address": {"@type": "PostalAddress", "addressLocality": "Los Angeles", "addressRegion": "CA", "addressCountry": "US"}
   },
-  "organizer": {"@type": "Organization", "name": "Su&IT", "url": "https://suit.by/"},
-  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://suit.by/hackathon/#apply"},
-  "image": "https://suit.by/hackathon/og-image.png"
+  "organizer": {"@type": "Organization", "name": "Krokit"},
+  "contributor": {"@type": "Organization", "name": "Su&IT", "url": "https://suit.by/"},
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://evvprog.github.io/suit-ai-hackathon-2027/#apply"},
+  "image": "https://evvprog.github.io/suit-ai-hackathon-2027/og-image.png"
 }
 </script>
 </head>
@@ -540,8 +554,8 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
 <!-- Standalone header: the association's main-site header is intentionally NOT used on this page -->
 <header class="site-header" data-header>
   <div class="wrap header-inner">
-    <a class="logo" href="#top" aria-label="Su&amp;IT AI Hackathon, back to top">
-      <span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span>
+    <a class="logo" href="#top" aria-label="Krokit AI Hackathon, back to top">
+      <span class="logo-keys" aria-hidden="true"><span>K</span><span>R</span><span>O</span><span>K</span><span>I</span><span>T</span></span>
       <span class="logo-text">AI Hackathon</span>
     </a>
     <nav class="site-nav" aria-label="Page sections">
@@ -551,7 +565,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
         <li><a href="#perks">Perks</a></li>
         <li><a href="#dates">Dates</a></li>
         <li><a href="#prizes">Prizes</a></li>
-        <li><a href="#partners">Partners</a></li>
+        <li><a href="#our-partners">Our partners</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
@@ -573,15 +587,15 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     <a class="key key--sm" style="--i:3" href="#perks" data-close><span class="key__face">Perks <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span></a>
     <a class="key key--blue key--sm" style="--i:4" href="#dates" data-close><span class="key__face">Dates <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span></a>
     <a class="key key--yellow key--sm" style="--i:5" href="#prizes" data-close><span class="key__face">Prizes <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a3 3 0 0 0 3 3M16 6h3v1a3 3 0 0 1-3 3M12 13v4M9 20h6M10 17h4"/></svg></span></a>
-    <a class="key key--sm" style="--i:6" href="#partners" data-close><span class="key__face">Partners <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span></a>
+    <a class="key key--sm" style="--i:6" href="#our-partners" data-close><span class="key__face">Our partners <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span></a>
     <a class="key key--sm" style="--i:7" href="#faq" data-close><span class="key__face">FAQ <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7v.5"/><circle class="fill" cx="12" cy="17" r="1.1"/></svg></span></a>
     <a class="key key--yellow key--sm" style="--i:8" href="#apply-hacker" data-form="hacker" data-close><span class="key__face">Apply now <span aria-hidden="true">↵</span></span></a>
     <a class="key key--sm" style="--i:9" href="#apply-contact" data-form="contact" data-close><span class="key__face">Contact us <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a>
     <button class="key key--sm" style="--i:10" type="button" data-close aria-label="Close menu"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button>
   </div>
   <div class="menu-foot">
-    <span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span>
-    <ul class="socials" aria-label="Su&amp;IT on social media">
+    <span class="logo-keys" aria-hidden="true"><span>K</span><span>R</span><span>O</span><span>K</span><span>I</span><span>T</span></span>
+    <ul class="socials" aria-label="Krokit on social media">
       <li><a class="key key--sm key--icon" href="mailto:info@suit.by" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
       <li><a class="key key--sm key--icon" href="#" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
       <li><a class="key key--sm key--icon" href="#" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
@@ -604,13 +618,12 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <p><span class="tag">Applied AI &amp; Robotics hackathon</span></p>
-      <h1 class="hero-title" id="hero-title"><span class="t1">Su&amp;IT</span><span class="t2">AI Hackathon <span class="year">2027</span></span></h1>
-      <p class="byline">by <strong>Su&amp;IT</strong>, an international startup competition and business forum</p>
+      <h1 class="hero-title" id="hero-title"><span class="t1">Krokit</span><span class="t2">AI Hackathon <span class="year">2027</span></span></h1>
       <p class="tagline">Two days to build AI and robots that actually work. Then pitch them to founders and investors.</p>
       <ul class="facts" aria-label="Key facts">
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Jan 30–31, 2027</li>
-        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Los Angeles area</li>
-        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg>Students &amp; recent grads</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Los Angeles, California, USA</li>
+        <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg>Open to everyone</li>
         <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16v4H4z"/><path d="M6 13v7h12v-7M12 9v11"/><path d="M12 9C10 9 8 8 8 6.5S10 4 12 9zM12 9c2 0 4-1 4-2.5S14 4 12 9z"/></svg>Free for accepted hackers</li>
       </ul>
       <div class="cta-row">
@@ -671,8 +684,8 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
 
 <div class="ticker" aria-hidden="true" data-ticker>
   <div class="ticker-track">
-    <span>APPLY NOW ✦ JAN 30–31, 2027 ✦ LOS ANGELES AREA ✦ APPLIED AI &amp; ROBOTICS ✦ FREE 1:1 AI MENTORING ✦ 5 MISSIONS ✦&nbsp;</span>
-    <span>APPLY NOW ✦ JAN 30–31, 2027 ✦ LOS ANGELES AREA ✦ APPLIED AI &amp; ROBOTICS ✦ FREE 1:1 AI MENTORING ✦ 5 MISSIONS ✦&nbsp;</span>
+    <span>APPLY NOW ✦ JAN 30–31, 2027 ✦ LOS ANGELES, CALIFORNIA, USA ✦ APPLIED AI &amp; ROBOTICS ✦ FREE 1:1 AI MENTORING ✦ 5 MISSIONS ✦&nbsp;</span>
+    <span>APPLY NOW ✦ JAN 30–31, 2027 ✦ LOS ANGELES, CALIFORNIA, USA ✦ APPLIED AI &amp; ROBOTICS ✦ FREE 1:1 AI MENTORING ✦ 5 MISSIONS ✦&nbsp;</span>
   </div>
 </div>
 
@@ -686,21 +699,25 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
 <!-- ================= ABOUT US ================= -->
 <section class="section band" id="about" aria-labelledby="about-title">
   <div class="wrap about-grid">
-    <!-- the S U & I T crew: keycap characters that hop in a wave and blink; a tap makes one jump -->
+    <!-- the K R O K I T crew: keycap characters that hop in a wave and blink; a tap makes one jump -->
     <ul class="crew" aria-hidden="true" data-anim>
-      <li class="cm" style="--d:0s"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>S</b></span></li>
-      <li class="cm" style="--d:.12s"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>U</b></span></li>
-      <li class="cm" style="--d:.24s;--f:var(--signal);--s:var(--signal-deep)"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>&amp;</b></span></li>
-      <li class="cm" style="--d:.36s;--f:var(--cyan);--s:var(--cyan-deep)"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>I</b></span></li>
-      <li class="cm" style="--d:.48s;--f:var(--blue);--s:var(--blue-deep);--tc:#fff;--eye:#fff"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>T</b></span></li>
+      <li class="cm" style="--d:0s"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>K</b></span></li>
+      <li class="cm" style="--d:.12s"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>R</b></span></li>
+      <li class="cm" style="--d:.24s;--f:var(--signal);--s:var(--signal-deep)"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>O</b></span></li>
+      <li class="cm" style="--d:.36s;--f:var(--cyan);--s:var(--cyan-deep)"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>K</b></span></li>
+      <li class="cm" style="--d:.48s;--f:var(--blue);--s:var(--blue-deep);--tc:#fff;--eye:#fff"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>I</b></span></li>
+      <li class="cm" style="--d:.6s;--f:var(--key-dark);--s:var(--key-dark-side);--tc:#fff;--eye:#fff"><span class="cm-face"><span class="cm-eyes"><i></i><i></i></span><b>T</b></span></li>
     </ul>
     <div class="about-copy">
       <span class="kicker">About us</span>
       <h2 id="about-title">Who we are</h2>
-      <p class="lead">Su&amp;IT runs an international startup competition and business forum. We connect founders with investors, companies and experts.</p>
-      <p>Now we're bringing that network to LA's student builders, with free mentoring and a real path to launch.</p>
-      <ul class="chips"><li class="chip">Startup competition</li><li class="chip">Business forum</li><li class="chip">Startup incubator</li></ul>
-      <p><a href="https://suit.by/">Visit suit.by</a></p>
+      <p class="lead">Krokit brings builders together to make AI and robotics that actually work. This hackathon connects curious people with mentors, partners and real problems.</p>
+      <p>Su&amp;IT, an international startup competition and business forum, supports us as a partner.</p>
+      <ul class="chips"><li class="chip">Hackathon</li><li class="chip">Free mentoring</li><li class="chip">Startup network</li></ul>
+      <div class="explain">
+        <div class="explain-card" data-drop><h3>What is a hackathon?</h3><p>A short sprint where small teams turn an idea into a working prototype in one weekend and show it to a jury.</p></div>
+        <div class="explain-card" data-drop style="--i:1"><h3>Who are hackers?</h3><p>Curious builders who love making things and solving problems with code, hardware and creativity. No break-ins, just building.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -711,7 +728,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     <header class="section-head">
       <span class="kicker">The event</span>
       <h2 id="event-title">Pick a mission. Build it in two days.</h2>
-      <p class="lead">For students and recent grads who like to build. Any major, any level: you'll team up, get mentors and ship a working prototype.</p>
+      <p class="lead">For anyone who likes to build: students, graduates, self-taught developers, designers and engineers. Any background, any level. You'll team up, get mentors and ship a working prototype.</p>
       <ul class="chips" aria-label="Who it's for"><li class="chip">Developers</li><li class="chip">Hardware &amp; robotics</li><li class="chip">Designers</li><li class="chip">Future founders</li><li class="chip">First-timers welcome</li></ul>
     </header>
     <span class="anchor" id="missions"></span>
@@ -821,8 +838,8 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
       <li class="tile" data-drop style="--i:0"><span class="ico ico--c"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20c0-3.6 2.9-6.5 6.5-6.5"/><path d="M17 12l1 2.2 2.2 1-2.2 1L17 18.5l-1-2.3-2.2-1 2.2-1z"/></svg></span><div><h3>Free 1:1 AI mentoring</h3><p>Engineers and founders help you scope, build and debug.</p></div></li>
       <li class="tile" data-drop style="--i:1"><span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8M7 12l3-3 2 2 4-4"/></svg></span><div><h3>AI seminar &amp; workshops</h3><p>Hands-on sessions on AI agents, robotics and pitching.</p></div></li>
       <li class="tile" data-drop style="--i:2"><span class="ico ico--y"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5v1a3 3 0 0 0 3 3M16 6h3v1a3 3 0 0 1-3 3M12 13v4M9 20h6M10 17h4"/></svg></span><div><h3>Prizes that launch you</h3><p>A scholarship for an AI program, mentorship and more.</p></div></li>
-      <li class="tile" data-drop style="--i:3"><span class="ico ico--d"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M6 15l4-4 3 3 5-6"/><path d="M15 8h3v3"/></svg></span><div><h3>Investors in the room</h3><p>Pitch to founders and investors from the Su&amp;IT network.</p></div></li>
-      <li class="tile" data-drop style="--i:4"><span class="ico ico--c"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span><div><h3>Your next team</h3><p>Meet builders from schools across Southern California.</p></div></li>
+      <li class="tile" data-drop style="--i:3"><span class="ico ico--d"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M6 15l4-4 3 3 5-6"/><path d="M15 8h3v3"/></svg></span><div><h3>Investors in the room</h3><p>Pitch to founders and investors from our partner network.</p></div></li>
+      <li class="tile" data-drop style="--i:4"><span class="ico ico--c"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2c3 .2 5.5 2.6 5.5 5.8"/></svg></span><div><h3>Your next team</h3><p>Meet builders from across Southern California.</p></div></li>
       <li class="tile" data-drop style="--i:5"><span class="ico ico--y"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8M5 3v5a2 2 0 0 0 4 0V3M7 11v10"/><path d="M17 3c-2 1.5-3 4-3 7h3v11"/></svg></span><div><h3>Meals &amp; swag</h3><p>Food on both days and merch for every hacker.</p></div></li>
     </ul>
     <div class="how">
@@ -910,10 +927,10 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     </header>
     <div class="podium">
       <article class="prize prize--1" data-drop style="--i:0"><span class="place">1ST PLACE</span><h3>AI program scholarship</h3><p>A grant to study AI at a world-renowned university.</p></article>
-      <article class="prize prize--2" data-drop style="--i:1"><span class="place">2ND PLACE</span><h3>Mentorship &amp; launch support</h3><p>1:1 mentoring and help launching your project with the Su&amp;IT incubator.</p></article>
+      <article class="prize prize--2" data-drop style="--i:1"><span class="place">2ND PLACE</span><h3>Mentorship &amp; launch support</h3><p>1:1 mentoring and help launching your project with our partners.</p></article>
       <article class="prize prize--3" data-drop style="--i:2"><span class="place">3RD PLACE</span><h3>Certificate</h3><p>A certificate toward tools or courses for your team.</p></article>
     </div>
-    <p class="finalists"><span class="chip">FINALISTS</span>Every finalist team pitches at Su&amp;IT Demo Day in Downtown LA, May 2027.</p>
+    <p class="finalists"><span class="chip">FINALISTS</span>Every finalist team pitches at Demo Day in Downtown LA, May 2027.</p>
     <p class="fine">Prizes may be subject to tax reporting and withholding. Winners will be asked for a W-9 or W-8BEN before payout.</p>
   </div>
 </section>
@@ -924,7 +941,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     <header class="section-head">
       <span class="kicker">Jury &amp; mentors</span>
       <h2 id="jury-title">International jury and mentors</h2>
-      <p class="lead">Founders, investors and AI engineers from the Su&amp;IT network. Names coming soon.</p>
+      <p class="lead">Founders, investors and AI engineers from our partner network. Names coming soon.</p>
     </header>
     <ul class="tiles">
       <li class="tile" data-drop style="--i:0"><span class="ico ico--d"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></span><div><h3>Jury</h3><p>Founders and investors who back early-stage startups.</p></div></li>
@@ -938,11 +955,33 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
   </div>
 </section>
 
+<!-- ================= OUR PARTNERS ================= -->
+<section class="section" id="our-partners" aria-labelledby="our-partners-title">
+  <div class="wrap">
+    <header class="section-head">
+      <span class="kicker">Partners</span>
+      <h2 id="our-partners-title">Our partners</h2>
+      <p class="lead">The organizations that help make this hackathon happen.</p>
+    </header>
+    <ul class="partner-cards">
+      <li class="pcard" data-drop>
+        <span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span>
+        <div class="pcard-body"><h3>Su&amp;IT</h3><p>International startup competition and business forum.</p>
+          <a class="key key--sm" href="https://suit.by/" target="_blank" rel="noopener"><span class="key__face">Visit suit.by <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a></div>
+      </li>
+      <li class="pcard pcard--empty" data-drop style="--i:1">
+        <div class="pcard-body"><h3>Your logo here</h3><p>Join the partners who help LA's builders ship.</p>
+          <a class="key key--sm key--blue" href="#apply-partner" data-form="contact" data-type="partner"><span class="key__face">Become a partner</span></a></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <!-- ================= PARTNERS ================= -->
 <section class="section band" id="partners" aria-labelledby="partners-title">
   <div class="wrap">
     <header class="section-head">
-      <span class="kicker">Partners</span>
+      <span class="kicker">Become a partner</span>
       <h2 id="partners-title">Partner with us</h2>
       <p class="lead">For companies, universities and clubs who want to meet LA's next builders.</p>
     </header>
@@ -959,7 +998,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
         <ul class="ticks">
           <li><strong>Meet the builders:</strong> your next interns, hires and early users. Opt-in résumé book.</li>
           <li><strong>Bring a real challenge:</strong> get working prototypes in two days.</li>
-          <li><strong>Teach a workshop:</strong> put your tools in students' hands.</li>
+          <li><strong>Teach a workshop:</strong> put your tools in builders' hands.</li>
           <li><strong>Flexible formats:</strong> talks, mentors, credits or in-kind support.</li>
         </ul>
         <div class="cta-row">
@@ -1002,14 +1041,14 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
       <h2 id="faq-title">Questions, answered</h2>
     </header>
     <div class="faq">
-      <div class="key faq-key"><details class="key__face"><summary>Who can apply?</summary><p class="ans">University students (undergrad or grad) and recent graduates, 18 or older, from any major.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>Who can apply?</summary><p class="ans">Anyone curious about AI and building things: students, graduates, self-taught developers, designers, engineers and career changers. 18 or older.</p></details></div>
       <div class="key faq-key"><details class="key__face"><summary>I'm new to hackathons. Can I join?</summary><p class="ans">Yes. We run beginner workshops, mentors walk the floor, and we help solo hackers find a team.</p></details></div>
       <div class="key faq-key"><details class="key__face"><summary>How much does it cost?</summary><p class="ans">Nothing. The hackathon is free for accepted hackers, with meals on both days.</p></details></div>
       <div class="key faq-key"><details class="key__face"><summary>Is it overnight?</summary><p class="ans">No. Doors are open 9 AM–9 PM on Saturday and 9 AM–6 PM on Sunday. You can keep building at home.</p></details></div>
       <div class="key faq-key"><details class="key__face"><summary>How do teams work?</summary><p class="ans">Teams have 2–4 people. Everyone applies on their own. No team yet? Join team matching at the opening.</p></details></div>
       <div class="key faq-key"><details class="key__face"><summary>What should I bring?</summary><p class="ans">Your laptop, charger and a photo ID. We'll have a hardware lab with basic tools and parts.</p></details></div>
       <div class="key faq-key"><details class="key__face"><summary>Can I start building before the event?</summary><p class="ans">Plan and learn in advance, but build during the hackathon. Open-source code, public APIs and AI tools are fine. Just credit them.</p></details></div>
-      <div class="key faq-key"><details class="key__face"><summary>Where is it?</summary><p class="ans">In the Los Angeles area. We'll post the address, parking and transit options as soon as the venue is confirmed.</p></details></div>
+      <div class="key faq-key"><details class="key__face"><summary>Where is it?</summary><p class="ans">In Los Angeles, California, USA. We'll post the address, parking and transit options as soon as the venue is confirmed.</p></details></div>
     </div>
   </div>
 </section>
@@ -1045,9 +1084,9 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
             <div class="field"><label for="h-email">Email <span class="req" aria-hidden="true">*</span></label><input id="h-email" name="email" type="email" required autocomplete="email" maxlength="160"></div>
           </div>
           <div class="two">
-            <div class="field"><label for="h-school">University <span class="req" aria-hidden="true">*</span></label><input id="h-school" name="school" required autocomplete="organization" maxlength="160" list="socal-schools">
+            <div class="field"><label for="h-school">University or company <span class="opt">(optional)</span></label><input id="h-school" name="school" autocomplete="organization" maxlength="160" list="socal-schools">
               <datalist id="socal-schools"><option value="Cal Poly Pomona"><option value="UCLA"><option value="USC"><option value="Caltech"><option value="UC Irvine"><option value="UC Riverside"><option value="Cal State LA"><option value="Cal State Long Beach"><option value="Cal State Fullerton"><option value="Cal State Northridge"><option value="Loyola Marymount University"><option value="Pepperdine University"><option value="Chapman University"><option value="Harvey Mudd College"><option value="Pomona College"></datalist></div>
-            <div class="field"><label for="h-level">Level of study <span class="req" aria-hidden="true">*</span></label><select id="h-level" name="level" required><option value="">Choose…</option><option>Undergraduate</option><option>Graduate (MS / PhD)</option><option>Recent graduate</option><option>Other</option></select></div>
+            <div class="field"><label for="h-level">I am a… <span class="opt">(optional)</span></label><select id="h-level" name="level"><option value="">Choose…</option><option>High school student</option><option>Undergraduate student</option><option>Graduate student (MS / PhD)</option><option>Recent graduate</option><option>Working professional</option><option>Other</option></select></div>
           </div>
           <fieldset class="field"><legend>Hackathons you've attended <span class="req" aria-hidden="true">*</span></legend>
             <div class="picks"><label class="key pick"><input type="radio" name="experience" value="first" required><span class="key__face">This is my first!</span></label><label class="key pick"><input type="radio" name="experience" value="1-3"><span class="key__face">1–3</span></label><label class="key pick"><input type="radio" name="experience" value="4+"><span class="key__face">4+</span></label></div>
@@ -1071,7 +1110,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
       <div class="panel" role="tabpanel" id="panel-contact" aria-labelledby="tab-contact">
         <div class="panel-info">
           <h3>Partner, speak or ask</h3>
-          <ul class="ticks"><li>Partners: bring a challenge, a workshop, mentors or credits</li><li>Speakers, mentors and judges</li><li>Media and student press</li><li>Anyone with a question</li></ul>
+          <ul class="ticks"><li>Partners: bring a challenge, a workshop, mentors or credits</li><li>Speakers, mentors and judges</li><li>Media and press</li><li>Anyone with a question</li></ul>
           <h4>What happens next</h4>
           <ol class="steps"><li>We reply by email within a few days</li><li>We agree on the format together</li></ol>
         </div>
@@ -1105,14 +1144,14 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
   <div class="footer-bit" aria-hidden="true" data-anim data-footer-bit></div>
   <div class="wrap footer-grid">
     <div>
-      <a class="logo" href="#top" aria-label="Su&amp;IT AI Hackathon, back to top"><span class="logo-keys" aria-hidden="true"><span>S</span><span>U</span><span>&amp;</span><span>I</span><span>T</span></span><span class="logo-text">AI Hackathon</span></a>
-      <p>Applied AI &amp; Robotics Hackathon · Jan 30–31, 2027 · Los Angeles area</p>
-      <p>Organized by Su&amp;IT.</p>
+      <a class="logo" href="#top" aria-label="Krokit AI Hackathon, back to top"><span class="logo-keys" aria-hidden="true"><span>K</span><span>R</span><span>O</span><span>K</span><span>I</span><span>T</span></span><span class="logo-text">AI Hackathon</span></a>
+      <p>Applied AI &amp; Robotics Hackathon · Jan 30–31, 2027 · Los Angeles, California, USA</p>
+      <p>Organized by Krokit, in partnership with Su&amp;IT.</p>
     </div>
     <div>
       <h2 class="footer-h">Contact</h2>
       <span class="email-text">info@suit.by</span>
-      <ul class="socials" aria-label="Su&amp;IT contacts and social media">
+      <ul class="socials" aria-label="Krokit contacts and social media">
         <li><a class="key key--sm key--icon" href="mailto:info@suit.by" aria-label="Email"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span></a></li>
         <li><a class="key key--sm key--icon" href="#" data-social aria-label="Instagram"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill" cx="17.5" cy="6.5" r="1.1"/></svg></span></a></li>
         <li><a class="key key--sm key--icon" href="#" data-social aria-label="Facebook"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-3.5H14V7.5c0-1 .4-1.5 1.5-1.5H18V3h-3c-3 0-4.5 1.8-4.5 4.5v2H8V13h2.5v8"/></svg></span></a></li>
@@ -1131,7 +1170,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
     </div>
   </div>
   <div class="wrap footer-bottom">
-    <p>© <span data-year>2026</span> Su&amp;IT. All rights reserved.</p>
+    <p>© <span data-year>2026</span> Krokit. All rights reserved.</p>
     <a href="#top">Back to top ↑</a>
   </div>
 </footer>
@@ -1150,7 +1189,7 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
   <div class="dialog-body">
     <form method="dialog" class="dialog-x"><button class="key key--sm key--icon" aria-label="Close"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button></form>
     <h2 id="coc-title">Code of Conduct</h2>
-    <p>Su&amp;IT AI Hackathon is for everyone. We are committed to a friendly, safe and harassment-free event for all participants, mentors, judges, partners, volunteers and staff, regardless of gender, gender identity, age, sexual orientation, disability, appearance, race, ethnicity, nationality, religion or tech stack.</p>
+    <p>Krokit AI Hackathon is for everyone. We are committed to a friendly, safe and harassment-free event for all participants, mentors, judges, partners, volunteers and staff, regardless of gender, gender identity, age, sexual orientation, disability, appearance, race, ethnicity, nationality, religion or tech stack.</p>
     <ul>
       <li>Be kind and respectful. Critique ideas, not people.</li>
       <li>No harassment, intimidation, discrimination or unwanted attention, in person or online.</li>
@@ -1165,9 +1204,9 @@ dialog[open]{position:fixed;inset:0;margin:auto;height:fit-content;z-index:200} 
   <div class="dialog-body">
     <form method="dialog" class="dialog-x"><button class="key key--sm key--icon" aria-label="Close"><span class="key__face"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></button></form>
     <h2 id="privacy-title">Privacy &amp; cookies</h2>
-    <p>We collect only what you submit in these forms (such as your name, email, school and answers) to review applications, contact you about the event and plan logistics.</p>
+    <p>We collect only what you submit in these forms (such as your name, email, affiliation and answers) to review applications, contact you about the event and plan logistics.</p>
     <ul>
-      <li>Your data is stored in Su&amp;IT's Google Workspace and is accessible only to the organizing team.</li>
+      <li>Your data is stored in the organizers' Google Workspace and is accessible only to the organizing team.</li>
       <li>We never sell your data. We share hacker applications with hiring partners only if you tick the opt-in box.</li>
       <li>We delete application data within 12 months after the event, or sooner on request: email info@suit.by.</li>
       <li>Photos and video may be taken at the event. Tell the registration desk if you'd rather not be photographed.</li>
@@ -1212,7 +1251,7 @@ window.HACK_CONFIG = Object.assign({
   formEndpoint: '',
   eventStart: '2027-01-30T09:00:00-08:00',
   eventEnd: '2027-01-31T18:00:00-08:00',
-  eventUrl: 'https://evvprog.github.io/suit-ai-hackathon-2027/', // TODO(launch): e.g. 'https://suit.by/hackathon/' (used by the share button); empty = this page
+  eventUrl: 'https://evvprog.github.io/suit-ai-hackathon-2027/', // TODO(launch): e.g. 'https://evvprog.github.io/suit-ai-hackathon-2027/' (used by the share button); empty = this page
   contactEmail: 'info@suit.by',
   draftMode: false
 }, window.HACK_CONFIG || {});
@@ -1543,9 +1582,9 @@ window.HACK_CONFIG = Object.assign({
   var success = $('#dlg-success');
   var pageUrl = location.href.split(/[?#]/)[0]; // also right when the file is opened from disk
   var eventUrl = CONFIG.eventUrl || pageUrl;
-  var gTitle = 'Su&IT AI Hackathon 2027';
+  var gTitle = 'Krokit AI Hackathon 2027';
   var gDetails = 'Applied AI & Robotics hackathon. Sat 9am-9pm and Sun 9am-6pm PT. ' + eventUrl;
-  var gPlace = 'Los Angeles area (venue to be announced)'; // TODO(launch): the venue address, here and in the .ics file
+  var gPlace = 'Los Angeles, California, USA (venue to be announced)'; // TODO(launch): the venue address, here and in the .ics file
   var days = [['Day 1', '20270130T170000Z', '20270131T050000Z'], ['Day 2', '20270131T170000Z', '20270201T020000Z']];
   $$('[data-gcal]', success).forEach(function (a) {
     var d = days[Number(a.getAttribute('data-gcal')) - 1];
