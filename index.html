@@ -1673,7 +1673,6 @@ window.HACK_CONFIG = Object.assign({
       var fd = new FormData(form), payload = new URLSearchParams(), seen = {};
       payload.set('role', role);
       payload.set('submitted_at', new Date().toISOString());
-      payload.set('page', pageUrl);
       fd.forEach(function (v, k) {
         if (k === 'hpx' || seen[k]) return;
         seen[k] = true;
